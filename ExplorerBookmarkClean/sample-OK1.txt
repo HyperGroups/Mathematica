@@ -1,0 +1,22 @@
+<!DOCTYPE NETSCAPE-Bookmark-file-1>
+<!-- This is an automatically generated file.
+     It will be read and overwritten.
+     DO NOT EDIT! -->
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+<TITLE>Bookmarks</TITLE>
+<H1>Bookmarks</H1>
+<DL>
+<DT><H3 ADD_DATE="1480854057" LAST_MODIFIED="1490691323" PERSONAL_TOOLBAR_FOLDER="true">书签栏</H3>
+<DL>
+<DT><H3> LightGBM </H3>
+<DL>
+<DT><A HREF="https://github.com/Microsoft/LightGBM/blob/102dc5fd7b5d2bae80cdf35c22d389952c10c631/docs/Parameters.md"</A>
+<DT><A HREF="https://github.com/Microsoft/LightGBM/blob/102dc5fd7b5d2bae80cdf35c22d389952c10c631/docs/Python-API.md"</A>
+<DT><A HREF="https://github.com/Microsoft/LightGBM/blob/master/docs/Python-API.md#common-methods"</A>
+<DT><A HREF="https://github.com/Microsoft/LightGBM/blob/master/examples/python-guide/simple_example.py"</A>
+<DT><A HREF="https://github.com/Microsoft/LightGBM/blob/master/examples/regression/train.conf"</A>
+<DT><A HREF="https://github.com/Microsoft/LightGBM/wiki/Features"</A>
+
+</DL>
+</DL>
+</DL>
