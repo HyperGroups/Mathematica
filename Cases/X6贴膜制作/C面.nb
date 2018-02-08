@@ -1,0 +1,311 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     11523,        303]
+NotebookOptionsPosition[      9647,        266]
+NotebookOutlinePosition[      9994,        281]
+CellTagsIndexPosition[      9951,        278]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"frameParams", " ", "=", " ", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"8.0", ",", " ", "1.0", ",", " ", "1.0"}], "}"}], ",", " ", 
+     RowBox[{"{", 
+      RowBox[{"0.5", ",", 
+       RowBox[{"-", "0.5"}], ",", "0.5", ",", "0.2"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"15.0", ",", "10.0", ",", "5.0"}], "}"}]}], "}"}]}], 
+  ";"}]], "Input",
+ CellID->4874582,ExpressionUUID->"6407b9f2-890c-4598-9ebb-9df8130a6c94"],
+
+Cell["\<\
+This renders a single frame of the 3D Mandelbulb fractal, varying the maximum \
+number of iterations:\
+\>", "ExampleText",
+ CellID->292971113,ExpressionUUID->"817523c0-e26f-4eff-bf14-9cccfdf00ea0"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"imgs", "=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"OpenCLFractalRender3D", "[", 
+      RowBox[{
+       RowBox[{"Platform", "\[Rule]", "$OpenCLPlatform"}], ",", 
+       RowBox[{"Device", "\[Rule]", "$OpenCLDevice"}], ",", 
+       RowBox[{"Method", "\[Rule]", "\"\<Quaternion\>\""}], ",", 
+       RowBox[{"ImageSize", "\[Rule]", "800"}], ",", 
+       RowBox[{"\"\<Type\>\"", "\[Rule]", "\"\<Mandelbrot\>\""}], ",", 
+       RowBox[{"\"\<Multisampling\>\"", "\[Rule]", "True"}], ",", 
+       RowBox[{"\"\<SingleFrame\>\"", "\[Rule]", "True"}], ",", " ", 
+       RowBox[{"\"\<SingleFrameParameters\>\"", "\[Rule]", "frameParams"}], 
+       ",", 
+       RowBox[{"\"\<MaxIterations\>\"", "\[Rule]", "#"}], ",", 
+       RowBox[{"\"\<Precision\>\"", "\[Rule]", "0.001"}], ",", 
+       RowBox[{"\"\<Floor\>\"", "\[Rule]", "False"}], ",", 
+       RowBox[{"\"\<Shadows\>\"", "\[Rule]", "True"}], ",", 
+       RowBox[{"\"\<Specularity\>\"", "\[Rule]", ".1"}], ",", 
+       RowBox[{"\"\<Color\>\"", "\[Rule]", 
+        RowBox[{"RandomReal", "[", 
+         RowBox[{"1", ",", "3"}], "]"}]}]}], "]"}], "&"}], "/@", 
+    RowBox[{"Range", "[", 
+     RowBox[{"1", ",", "8", ",", "1"}], "]"}]}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.6259139607541113`*^9, 3.625914020494452*^9}, {
+  3.625914074654811*^9, 3.6259140964882975`*^9}, {3.6259141404954596`*^9, 
+  3.6259141406345577`*^9}, {3.6259141719577513`*^9, 3.625914199752445*^9}, {
+  3.625914268230962*^9, 3.625914328126399*^9}, {3.625914400229497*^9, 
+  3.625914439846554*^9}, {3.6259150438384895`*^9, 3.6259150579054565`*^9}, {
+  3.625915554815524*^9, 3.625915558991495*^9}, {3.6259181502918053`*^9, 
+  3.6259181508221684`*^9}, {3.6259188018039556`*^9, 3.62591890496003*^9}},
+ CellID->12777440,ExpressionUUID->"ad964340-e12a-4178-8013-4d7dd2144f04"],
+
+Cell["This shows the result in a grid:", "ExampleText",
+ CellID->835048580,ExpressionUUID->"de09425a-05f8-442d-8f11-4a6462eb4209"],
+
+Cell[BoxData[
+ RowBox[{"low", "=", 
+  RowBox[{"ImageResize", "[", 
+   RowBox[{
+    RowBox[{"ImagePad", "[", 
+     RowBox[{
+      RowBox[{"ImageAssemble", "[", "imgs", "]"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"50", ",", "50"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"400", ",", "210"}], "}"}]}], "}"}]}], "]"}], ",", "1980"}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.6259141060810766`*^9, 3.6259141155928154`*^9}, {
+  3.625914245225664*^9, 3.625914261313079*^9}, {3.6259181781255136`*^9, 
+  3.6259182016822233`*^9}, {3.625918314957461*^9, 3.6259183234735036`*^9}, {
+  3.6259189391672664`*^9, 3.6259189657190785`*^9}, {3.6259190400987873`*^9, 
+  3.6259190540056305`*^9}, {3.6259191076146135`*^9, 3.6259191441965327`*^9}},
+ CellID->367898361,ExpressionUUID->"9242db46-35dd-46da-8dfe-ca814d077558"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"size", "=", 
+  RowBox[{"low", "//", "ImageDimensions"}]}]], "Input",
+ CellChangeTimes->{{3.625914668740729*^9, 3.6259146750472107`*^9}, {
+  3.6259190618992357`*^9, 
+  3.6259190631741266`*^9}},ExpressionUUID->"0cfac62a-506c-4d8e-a81e-\
+39f347d12335"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"1980", ",", "430"}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.62591467531839*^9, 3.6259182064155693`*^9, 3.6259183283089323`*^9, 
+   3.625918918869903*^9, 3.625918970442425*^9, {3.625919057937416*^9, 
+   3.6259190635303783`*^9}, {3.625919113842025*^9, 
+   3.6259191493772154`*^9}},ExpressionUUID->"8e80f76a-513f-4e58-8f6b-\
+a53e35e29da8"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"back", "=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"ImageResize", "[", 
+      RowBox[{"#", ",", 
+       RowBox[{"{", 
+        RowBox[{"1980", ",", 
+         RowBox[{"size", "[", 
+          RowBox[{"[", "2", "]"}], "]"}]}], "}"}]}], "]"}], "&"}], "@", 
+    RowBox[{"ImageRotate", "[", 
+     RowBox[{
+     "Import", "@", 
+      "\"\<F:\\\\Pictures\\\\Hubble \
+Telescope\\\\top100original\\\\heic0506b.jpg\>\""}], "]"}]}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.625914580887483*^9, 3.625914606211426*^9}, {
+   3.625914648703532*^9, 3.6259146494030275`*^9}, {3.6259147755544095`*^9, 
+   3.6259148096305513`*^9}, 3.6259150181963353`*^9, 3.6259154531965256`*^9, {
+   3.6259182085130568`*^9, 3.625918209195528*^9}, {3.6259189992458425`*^9, 
+   3.625919001139187*^9}, {3.625919065438749*^9, 
+   3.625919067415144*^9}},ExpressionUUID->"99a5ba23-7549-4a58-9dfe-\
+b11ea71b67a5"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"backStar1", "=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"ImageResize", "[", 
+      RowBox[{"#", ",", 
+       RowBox[{"{", 
+        RowBox[{"1980", ",", "1200"}], "}"}]}], "]"}], "&"}], "@", 
+    RowBox[{
+    "Import", "@", 
+     "\"\<F:\\\\Pictures\\\\Hubble \
+Telescope\\\\top100original\\\\heic0416a.tif\>\""}]}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.6259168986716623`*^9, 3.625916919168185*^9}, {
+  3.6259180002805195`*^9, 
+  3.6259180144125433`*^9}},ExpressionUUID->"e8c8f551-ae37-4e07-8cc0-\
+801d0a16d7d5"],
+
+Cell[BoxData[
+ RowBox[{"g1", "=", 
+  RowBox[{"ImageCompose", "[", 
+   RowBox[{"back", ",", 
+    RowBox[{"{", 
+     RowBox[{"low", ",", ".7"}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.625914609097484*^9, 3.625914630400576*^9}, 
+   3.6259147989219637`*^9, {3.625915084986644*^9, 3.6259150876034975`*^9}, {
+   3.625916924017621*^9, 
+   3.6259169248782306`*^9}},ExpressionUUID->"222ff67f-c459-4a12-a241-\
+4190903d6476"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"g2", "=", 
+   RowBox[{"ImagePad", "[", 
+    RowBox[{"g1", ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"0", ",", "0"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", 
+         RowBox[{"1200", "-", 
+          RowBox[{"size", "[", 
+           RowBox[{"[", "2", "]"}], "]"}]}]}], "}"}]}], "}"}]}], "]"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.6259169918987155`*^9, 3.6259170315257926`*^9}, {
+   3.625918221137*^9, 3.6259182215222607`*^9}, 3.6259190121740046`*^9, 
+   3.6259190768508167`*^9},ExpressionUUID->"15f1e824-276d-4be1-9b29-\
+623691232dd1"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"g2", "//", "ImageDimensions"}]], "Input",
+ CellChangeTimes->{{3.6259170716362104`*^9, 3.625917071944442*^9}, {
+  3.625917103499786*^9, 
+  3.625917109254874*^9}},ExpressionUUID->"f58a19e8-44f1-4b9b-9138-\
+eaa3064d3d50"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"1980", ",", "1200"}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.6259170727079706`*^9, 3.6259171095260696`*^9, 3.625917144982177*^9, {
+   3.625918216622802*^9, 3.625918224853622*^9}, 3.625918333373521*^9, 
+   3.6259189214357243`*^9, 3.625918972915191*^9, {3.6259190069903197`*^9, 
+   3.625919019741355*^9}, 3.625919082536845*^9, {3.6259191162727604`*^9, 
+   3.625919151791926*^9}},ExpressionUUID->"f91b63a9-838a-48bc-81e8-\
+d075ad9570a8"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"g2", "=", 
+  RowBox[{"ImageAssemble", "[", 
+   RowBox[{"List", "/@", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"ImageTake", "[", 
+       RowBox[{"backStar1", ",", 
+        RowBox[{"1200", "-", 
+         RowBox[{"size", "[", 
+          RowBox[{"[", "2", "]"}], "]"}]}]}], "]"}], ",", "g1"}], "}"}]}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.6259180262018747`*^9, 3.6259180704061947`*^9}, {
+   3.625918252987554*^9, 3.6259182545166383`*^9}, {3.625918992218854*^9, 
+   3.625919017451744*^9}, 
+   3.6259190803132706`*^9},ExpressionUUID->"06d53461-4d23-4350-a1f4-\
+9706eb2dbbaf"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"backC", "=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"ImageResize", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{
+        "Import", "@", 
+         "\"\<F:\\\\Documents\\\\Mathematica\\\\Topic\\\\X6\:8d34\:819c\:8bbe\
+\:8ba1\\\\c\:9762.PNG\>\""}], "//", "ImageCrop"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"1980", ",", "1200"}], "}"}]}], "]"}], "//", 
+     RowBox[{
+      RowBox[{"Binarize", "[", 
+       RowBox[{"#", ",", ".6"}], "]"}], "&"}]}], "//", "ColorNegate"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.625917791822814*^9, 3.62591788728645*^9}, {
+  3.625917937991394*^9, 
+  3.62591794041109*^9}},ExpressionUUID->"12bbc07d-212a-4ffd-8ec7-\
+da4897d5a972"],
+
+Cell[BoxData[
+ RowBox[{"ImageAdd", "[", 
+  RowBox[{"backC", ",", "g2"}], "]"}]], "Input",
+ CellChangeTimes->{{3.6259179014875135`*^9, 3.6259179282574787`*^9}, {
+  3.625918242920422*^9, 
+  3.6259182583853903`*^9}},ExpressionUUID->"426f9080-752e-4d93-b67d-\
+b7d7308b160e"]
+},
+WindowSize->{1540, 825},
+WindowMargins->{{-9, Automatic}, {Automatic, 0}},
+FrontEndVersion->"11.2 for Microsoft Windows (64-bit) (September 10, 2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 481, 13, 43, "Input",ExpressionUUID->"6407b9f2-890c-4598-9ebb-9df8130a6c94",
+ CellID->4874582],
+Cell[1042, 35, 207, 4, 32, "ExampleText",ExpressionUUID->"817523c0-e26f-4eff-bf14-9cccfdf00ea0",
+ CellID->292971113],
+Cell[1252, 41, 1820, 33, 160, "Input",ExpressionUUID->"ad964340-e12a-4178-8013-4d7dd2144f04",
+ CellID->12777440],
+Cell[3075, 76, 130, 1, 32, "ExampleText",ExpressionUUID->"de09425a-05f8-442d-8f11-4a6462eb4209",
+ CellID->835048580],
+Cell[3208, 79, 860, 19, 43, "Input",ExpressionUUID->"9242db46-35dd-46da-8dfe-ca814d077558",
+ CellID->367898361],
+Cell[CellGroupData[{
+Cell[4093, 102, 273, 6, 43, "Input",ExpressionUUID->"0cfac62a-506c-4d8e-a81e-39f347d12335"],
+Cell[4369, 110, 379, 8, 49, "Output",ExpressionUUID->"8e80f76a-513f-4e58-8f6b-a53e35e29da8"]
+}, Open  ]],
+Cell[4763, 121, 907, 23, 73, "Input",ExpressionUUID->"99a5ba23-7549-4a58-9dfe-b11ea71b67a5"],
+Cell[5673, 146, 550, 16, 43, "Input",ExpressionUUID->"e8c8f551-ae37-4e07-8cc0-801d0a16d7d5"],
+Cell[6226, 164, 425, 10, 43, "Input",ExpressionUUID->"222ff67f-c459-4a12-a241-4190903d6476"],
+Cell[6654, 176, 632, 18, 43, "Input",ExpressionUUID->"15f1e824-276d-4be1-9b29-623691232dd1"],
+Cell[CellGroupData[{
+Cell[7311, 198, 242, 5, 43, "Input",ExpressionUUID->"f58a19e8-44f1-4b9b-9138-eaa3064d3d50"],
+Cell[7556, 205, 477, 9, 49, "Output",ExpressionUUID->"f91b63a9-838a-48bc-81e8-d075ad9570a8"]
+}, Open  ]],
+Cell[8048, 217, 608, 16, 43, "Input",ExpressionUUID->"06d53461-4d23-4350-a1f4-9706eb2dbbaf"],
+Cell[8659, 235, 711, 21, 78, "Input",ExpressionUUID->"12bbc07d-212a-4ffd-8ec7-da4897d5a972"],
+Cell[9373, 258, 270, 6, 43, "Input",ExpressionUUID->"426f9080-752e-4d93-b67d-b7d7308b160e"]
+}
+]
+*)
+

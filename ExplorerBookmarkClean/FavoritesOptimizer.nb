@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     27261,        731]
-NotebookOptionsPosition[     22430,        610]
-NotebookOutlinePosition[     22787,        626]
-CellTagsIndexPosition[     22744,        623]
+NotebookDataLength[     57954,       1490]
+NotebookOptionsPosition[     50434,       1303]
+NotebookOutlinePosition[     50790,       1319]
+CellTagsIndexPosition[     50747,       1316]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -27,10 +27,10 @@ Cell["FavoritesOptimizer", "Title",
 
 Cell[CellGroupData[{
 
-Cell["HyperGroups@Update@2017-07-17", "Chapter",
+Cell["HyperGroups@Update@2017-07-18", "Chapter",
  CellChangeTimes->{{3.7092535478404436`*^9, 3.7092535552276583`*^9}, {
-  3.709253867969499*^9, 
-  3.709253869359902*^9}},ExpressionUUID->"0f551611-71d2-44d6-9405-\
+   3.709253867969499*^9, 3.709253869359902*^9}, 
+   3.7093807435775113`*^9},ExpressionUUID->"0f551611-71d2-44d6-9405-\
 11f843acb1b4"],
 
 Cell[CellGroupData[{
@@ -206,19 +206,47 @@ Cell[BoxData[
    3.709375974996442*^9}},ExpressionUUID->"a779fb08-5a8c-447b-b3bd-\
 dfa62fc91da1"],
 
+Cell[CellGroupData[{
+
 Cell[BoxData[
- RowBox[{"(*", 
-  RowBox[{
-   RowBox[{"xml", "=", 
-    RowBox[{"Import", "[", 
-     RowBox[{
-     "\"\<E:\\\\\:6211\:7684\:575a\:679c\:4e91\\\\bookmarks_2017_7_17-full.\
-html\>\"", ",", "\"\<XMLObject\>\""}], "]"}]}], ";"}], "*)"}]], "Input",
+ RowBox[{"xml", "=", 
+  RowBox[{"Import", "[", 
+   RowBox[{"file", ",", "\"\<Elements\>\""}], "]"}]}]], "Input",
  CellChangeTimes->{{3.7092582545042534`*^9, 3.709258262735869*^9}, {
    3.7092583011577454`*^9, 3.7092583050913534`*^9}, {3.709258723435772*^9, 
-   3.709258723622972*^9}, 
-   3.709270757153478*^9},ExpressionUUID->"158b8ed8-26fd-4d6d-b380-\
+   3.709258723622972*^9}, 3.709270757153478*^9, {3.709379305454643*^9, 
+   3.709379328551405*^9}},ExpressionUUID->"158b8ed8-26fd-4d6d-b380-\
 042194a1dc96"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"Data\"\>", ",", "\<\"FullData\"\>", ",", "\<\"Hyperlinks\"\>", 
+   ",", "\<\"ImageLinks\"\>", ",", "\<\"Images\"\>", ",", "\<\"Plaintext\"\>",
+    ",", "\<\"Source\"\>", ",", "\<\"Title\"\>", ",", "\<\"XMLObject\"\>"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{
+  3.709379328850259*^9},ExpressionUUID->"93d9b862-2546-49f2-848c-\
+a7d938ef27d5"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CopyFile", "[", 
+  RowBox[{"file", ",", 
+   RowBox[{"file", "<>", "\"\<.xml\>\""}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7093793400882964`*^9, 
+  3.7093793478571987`*^9}},ExpressionUUID->"e2cbf7c1-67eb-4c07-8a0f-\
+5990c5c6234e"],
+
+Cell[BoxData["\<\"C:\\\\\:65b0\:5efa\:6587\:4ef6\:5939\\\\\:575a\:679c\:4e91\\\
+\\Wolfram \
+Mathematica\\\\Projects\\\\\:6536\:85cf\:5939\:6574\:7406\\\\Favorites\\\\\
+bookmarks_2017_7_17-full.html.xml\"\>"], "Output",
+ CellChangeTimes->{
+  3.7093793482030535`*^9},ExpressionUUID->"b435f08b-7b4e-4b25-acc8-\
+18866bcbce0f"]
+}, Open  ]],
 
 Cell[BoxData[
  RowBox[{"removeTag", ":=", 
@@ -442,7 +470,631 @@ Cell[BoxData[
  RowBox[{"chrome2asso", "@", "source"}]], "Input",
  CellChangeTimes->{{3.709375719720852*^9, 
   3.7093757433981957`*^9}},ExpressionUUID->"a3bc9cb6-b5ae-4565-a0f3-\
-a0962c60fd46"]
+a0962c60fd46"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"asso", "[", 
+  RowBox[{"[", "1", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.709380935518268*^9, 
+  3.7093809379774485`*^9}},ExpressionUUID->"0c1dbe15-8e4b-46fd-9a04-\
+ba2b695ca595"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"https://github.com/Microsoft/LightGBM/blob/\
+102dc5fd7b5d2bae80cdf35c22d389952c10c631/docs/Parameters.md\"\>", 
+   ",", "\<\"https://github.com/Microsoft/LightGBM/blob/\
+102dc5fd7b5d2bae80cdf35c22d389952c10c631/docs/Python-API.md\"\>", 
+   ",", "\<\"https://github.com/Microsoft/LightGBM/blob/master/docs/Python-\
+API.md#common-methods\"\>", 
+   ",", "\<\"https://github.com/Microsoft/LightGBM/blob/master/examples/\
+python-guide/simple_example.py\"\>", 
+   ",", "\<\"https://github.com/Microsoft/LightGBM/blob/master/examples/\
+regression/train.conf\"\>", 
+   ",", "\<\"https://github.com/Microsoft/LightGBM/wiki/Features\"\>"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{
+  3.709380938308591*^9},ExpressionUUID->"eb86cc42-0be3-4700-8b2b-\
+ef1188cf0bec"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"SetDirectory", "[", "\"\<temp\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.709381274087204*^9, 
+  3.70938128117984*^9}},ExpressionUUID->"9f150774-398d-42cb-ad5f-\
+709f8b79c34a"],
+
+Cell[BoxData["\<\"C:\\\\Users\\\\admin\\\\Documents\\\\temp\"\>"], "Output",
+ CellChangeTimes->{
+  3.709381281808815*^9},ExpressionUUID->"d3f560df-4584-4344-b55b-\
+81527bc37e03"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CreateDirectory", "@", "\"\<temp\>\""}]], "Input",
+ CellChangeTimes->{{3.7093812831364975`*^9, 
+  3.7093812923444915`*^9}},ExpressionUUID->"6c9adb79-1412-49c2-b043-\
+50be04475029"],
+
+Cell[BoxData["\<\"C:\\\\Users\\\\admin\\\\Documents\\\\temp\\\\temp\"\>"], \
+"Output",
+ CellChangeTimes->{{3.709381287616038*^9, 
+  3.70938129262527*^9}},ExpressionUUID->"f408e404-0a4b-4fee-8a37-\
+b399c5ede9b9"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<test.html\>\"", ",", "TABLE"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7093819155407634`*^9, 3.709381918577937*^9}, 
+   3.7093819822646112`*^9},ExpressionUUID->"7df5328c-be7f-4407-b034-\
+243a671fbf1e"],
+
+Cell[BoxData["\<\"test.html\"\>"], "Output",
+ CellChangeTimes->{3.709381924864889*^9, 3.7093819877614565`*^9, 
+  3.7093821487930117`*^9, 
+  3.709382205523985*^9},ExpressionUUID->"21ed0c07-6e2d-4662-a1c4-\
+00ad3d073db0"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["TABLE"], "Input",ExpressionUUID->"e70f40d7-9e28-43d4-abd1-bccf218b17ef"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   TagBox[
+    ButtonBox[
+     PaneSelectorBox[{False->"1", True->
+      StyleBox["1", "HyperlinkActive"]}, Dynamic[
+       CurrentValue["MouseOver"]],
+      BaseStyle->{"Hyperlink"},
+      FrameMargins->0,
+      ImageSize->Automatic],
+     BaseStyle->"Hyperlink",
+     ButtonData:>{{
+       "https://github.com/Microsoft/LightGBM/blob/\
+102dc5fd7b5d2bae80cdf35c22d389952c10c631/docs/Parameters.md", 
+        "https://github.com/Microsoft/LightGBM/blob/\
+102dc5fd7b5d2bae80cdf35c22d389952c10c631/docs/Python-API.md", 
+        "https://github.com/Microsoft/LightGBM/blob/master/docs/Python-API.md#\
+common-methods", 
+        "https://github.com/Microsoft/LightGBM/blob/master/examples/python-\
+guide/simple_example.py", 
+        "https://github.com/Microsoft/LightGBM/blob/master/examples/\
+regression/train.conf", 
+        "https://github.com/Microsoft/LightGBM/wiki/Features"}, None},
+     ButtonNote->ButtonData],
+    Annotation[#, {
+     "https://github.com/Microsoft/LightGBM/blob/\
+102dc5fd7b5d2bae80cdf35c22d389952c10c631/docs/Parameters.md", 
+      "https://github.com/Microsoft/LightGBM/blob/\
+102dc5fd7b5d2bae80cdf35c22d389952c10c631/docs/Python-API.md", 
+      "https://github.com/Microsoft/LightGBM/blob/master/docs/Python-API.md#\
+common-methods", 
+      "https://github.com/Microsoft/LightGBM/blob/master/examples/python-\
+guide/simple_example.py", 
+      "https://github.com/Microsoft/LightGBM/blob/master/examples/regression/\
+train.conf", "https://github.com/Microsoft/LightGBM/wiki/Features"}, 
+     "Hyperlink"]& ], ",", 
+   TagBox[
+    ButtonBox[
+     PaneSelectorBox[{False->"2", True->
+      StyleBox["2", "HyperlinkActive"]}, Dynamic[
+       CurrentValue["MouseOver"]],
+      BaseStyle->{"Hyperlink"},
+      FrameMargins->0,
+      ImageSize->Automatic],
+     BaseStyle->"Hyperlink",
+     ButtonData:>{{
+       "https://github.com/Microsoft/LightGBM/blob/\
+102dc5fd7b5d2bae80cdf35c22d389952c10c631/docs/Parameters.md", 
+        "https://github.com/Microsoft/LightGBM/blob/\
+102dc5fd7b5d2bae80cdf35c22d389952c10c631/docs/Python-API.md", 
+        "https://github.com/Microsoft/LightGBM/blob/master/docs/Python-API.md#\
+common-methods", 
+        "https://github.com/Microsoft/LightGBM/blob/master/examples/python-\
+guide/simple_example.py", 
+        "https://github.com/Microsoft/LightGBM/blob/master/examples/\
+regression/train.conf", 
+        "https://github.com/Microsoft/LightGBM/wiki/Features"}, None},
+     ButtonNote->ButtonData],
+    Annotation[#, {
+     "https://github.com/Microsoft/LightGBM/blob/\
+102dc5fd7b5d2bae80cdf35c22d389952c10c631/docs/Parameters.md", 
+      "https://github.com/Microsoft/LightGBM/blob/\
+102dc5fd7b5d2bae80cdf35c22d389952c10c631/docs/Python-API.md", 
+      "https://github.com/Microsoft/LightGBM/blob/master/docs/Python-API.md#\
+common-methods", 
+      "https://github.com/Microsoft/LightGBM/blob/master/examples/python-\
+guide/simple_example.py", 
+      "https://github.com/Microsoft/LightGBM/blob/master/examples/regression/\
+train.conf", "https://github.com/Microsoft/LightGBM/wiki/Features"}, 
+     "Hyperlink"]& ], ",", 
+   TagBox[
+    ButtonBox[
+     PaneSelectorBox[{False->"3", True->
+      StyleBox["3", "HyperlinkActive"]}, Dynamic[
+       CurrentValue["MouseOver"]],
+      BaseStyle->{"Hyperlink"},
+      FrameMargins->0,
+      ImageSize->Automatic],
+     BaseStyle->"Hyperlink",
+     ButtonData:>{{
+       "https://github.com/Microsoft/LightGBM/blob/\
+102dc5fd7b5d2bae80cdf35c22d389952c10c631/docs/Parameters.md", 
+        "https://github.com/Microsoft/LightGBM/blob/\
+102dc5fd7b5d2bae80cdf35c22d389952c10c631/docs/Python-API.md", 
+        "https://github.com/Microsoft/LightGBM/blob/master/docs/Python-API.md#\
+common-methods", 
+        "https://github.com/Microsoft/LightGBM/blob/master/examples/python-\
+guide/simple_example.py", 
+        "https://github.com/Microsoft/LightGBM/blob/master/examples/\
+regression/train.conf", 
+        "https://github.com/Microsoft/LightGBM/wiki/Features"}, None},
+     ButtonNote->ButtonData],
+    Annotation[#, {
+     "https://github.com/Microsoft/LightGBM/blob/\
+102dc5fd7b5d2bae80cdf35c22d389952c10c631/docs/Parameters.md", 
+      "https://github.com/Microsoft/LightGBM/blob/\
+102dc5fd7b5d2bae80cdf35c22d389952c10c631/docs/Python-API.md", 
+      "https://github.com/Microsoft/LightGBM/blob/master/docs/Python-API.md#\
+common-methods", 
+      "https://github.com/Microsoft/LightGBM/blob/master/examples/python-\
+guide/simple_example.py", 
+      "https://github.com/Microsoft/LightGBM/blob/master/examples/regression/\
+train.conf", "https://github.com/Microsoft/LightGBM/wiki/Features"}, 
+     "Hyperlink"]& ], ",", 
+   TagBox[
+    ButtonBox[
+     PaneSelectorBox[{False->"4", True->
+      StyleBox["4", "HyperlinkActive"]}, Dynamic[
+       CurrentValue["MouseOver"]],
+      BaseStyle->{"Hyperlink"},
+      FrameMargins->0,
+      ImageSize->Automatic],
+     BaseStyle->"Hyperlink",
+     ButtonData:>{{
+       "https://github.com/Microsoft/LightGBM/blob/\
+102dc5fd7b5d2bae80cdf35c22d389952c10c631/docs/Parameters.md", 
+        "https://github.com/Microsoft/LightGBM/blob/\
+102dc5fd7b5d2bae80cdf35c22d389952c10c631/docs/Python-API.md", 
+        "https://github.com/Microsoft/LightGBM/blob/master/docs/Python-API.md#\
+common-methods", 
+        "https://github.com/Microsoft/LightGBM/blob/master/examples/python-\
+guide/simple_example.py", 
+        "https://github.com/Microsoft/LightGBM/blob/master/examples/\
+regression/train.conf", 
+        "https://github.com/Microsoft/LightGBM/wiki/Features"}, None},
+     ButtonNote->ButtonData],
+    Annotation[#, {
+     "https://github.com/Microsoft/LightGBM/blob/\
+102dc5fd7b5d2bae80cdf35c22d389952c10c631/docs/Parameters.md", 
+      "https://github.com/Microsoft/LightGBM/blob/\
+102dc5fd7b5d2bae80cdf35c22d389952c10c631/docs/Python-API.md", 
+      "https://github.com/Microsoft/LightGBM/blob/master/docs/Python-API.md#\
+common-methods", 
+      "https://github.com/Microsoft/LightGBM/blob/master/examples/python-\
+guide/simple_example.py", 
+      "https://github.com/Microsoft/LightGBM/blob/master/examples/regression/\
+train.conf", "https://github.com/Microsoft/LightGBM/wiki/Features"}, 
+     "Hyperlink"]& ], ",", 
+   TagBox[
+    ButtonBox[
+     PaneSelectorBox[{False->"5", True->
+      StyleBox["5", "HyperlinkActive"]}, Dynamic[
+       CurrentValue["MouseOver"]],
+      BaseStyle->{"Hyperlink"},
+      FrameMargins->0,
+      ImageSize->Automatic],
+     BaseStyle->"Hyperlink",
+     ButtonData:>{{
+       "https://github.com/Microsoft/LightGBM/blob/\
+102dc5fd7b5d2bae80cdf35c22d389952c10c631/docs/Parameters.md", 
+        "https://github.com/Microsoft/LightGBM/blob/\
+102dc5fd7b5d2bae80cdf35c22d389952c10c631/docs/Python-API.md", 
+        "https://github.com/Microsoft/LightGBM/blob/master/docs/Python-API.md#\
+common-methods", 
+        "https://github.com/Microsoft/LightGBM/blob/master/examples/python-\
+guide/simple_example.py", 
+        "https://github.com/Microsoft/LightGBM/blob/master/examples/\
+regression/train.conf", 
+        "https://github.com/Microsoft/LightGBM/wiki/Features"}, None},
+     ButtonNote->ButtonData],
+    Annotation[#, {
+     "https://github.com/Microsoft/LightGBM/blob/\
+102dc5fd7b5d2bae80cdf35c22d389952c10c631/docs/Parameters.md", 
+      "https://github.com/Microsoft/LightGBM/blob/\
+102dc5fd7b5d2bae80cdf35c22d389952c10c631/docs/Python-API.md", 
+      "https://github.com/Microsoft/LightGBM/blob/master/docs/Python-API.md#\
+common-methods", 
+      "https://github.com/Microsoft/LightGBM/blob/master/examples/python-\
+guide/simple_example.py", 
+      "https://github.com/Microsoft/LightGBM/blob/master/examples/regression/\
+train.conf", "https://github.com/Microsoft/LightGBM/wiki/Features"}, 
+     "Hyperlink"]& ], ",", 
+   TagBox[
+    ButtonBox[
+     PaneSelectorBox[{False->"6", True->
+      StyleBox["6", "HyperlinkActive"]}, Dynamic[
+       CurrentValue["MouseOver"]],
+      BaseStyle->{"Hyperlink"},
+      FrameMargins->0,
+      ImageSize->Automatic],
+     BaseStyle->"Hyperlink",
+     ButtonData:>{{
+       "https://github.com/Microsoft/LightGBM/blob/\
+102dc5fd7b5d2bae80cdf35c22d389952c10c631/docs/Parameters.md", 
+        "https://github.com/Microsoft/LightGBM/blob/\
+102dc5fd7b5d2bae80cdf35c22d389952c10c631/docs/Python-API.md", 
+        "https://github.com/Microsoft/LightGBM/blob/master/docs/Python-API.md#\
+common-methods", 
+        "https://github.com/Microsoft/LightGBM/blob/master/examples/python-\
+guide/simple_example.py", 
+        "https://github.com/Microsoft/LightGBM/blob/master/examples/\
+regression/train.conf", 
+        "https://github.com/Microsoft/LightGBM/wiki/Features"}, None},
+     ButtonNote->ButtonData],
+    Annotation[#, {
+     "https://github.com/Microsoft/LightGBM/blob/\
+102dc5fd7b5d2bae80cdf35c22d389952c10c631/docs/Parameters.md", 
+      "https://github.com/Microsoft/LightGBM/blob/\
+102dc5fd7b5d2bae80cdf35c22d389952c10c631/docs/Python-API.md", 
+      "https://github.com/Microsoft/LightGBM/blob/master/docs/Python-API.md#\
+common-methods", 
+      "https://github.com/Microsoft/LightGBM/blob/master/examples/python-\
+guide/simple_example.py", 
+      "https://github.com/Microsoft/LightGBM/blob/master/examples/regression/\
+train.conf", "https://github.com/Microsoft/LightGBM/wiki/Features"}, 
+     "Hyperlink"]& ]}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.7093820746634073`*^9},ExpressionUUID->"b0b99605-e49e-4d4a-999f-\
+67b0a046ffaf"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"TABLE", "=", 
+  RowBox[{"Graphics", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"Tooltip", "[", 
+       RowBox[{
+        RowBox[{"Hyperlink", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"Purple", ",", 
+            RowBox[{"Rectangle", "[", 
+             RowBox[{"{", 
+              RowBox[{"0", ",", "0"}], "}"}], "]"}]}], "}"}], ",", 
+          "\"\<http://www.baidu.com\>\""}], "]"}], ",", 
+        "\"\<Wolfram Research\>\""}], "]"}], ",", 
+      RowBox[{"Tooltip", "[", 
+       RowBox[{
+        RowBox[{"Hyperlink", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"Orange", ",", 
+            RowBox[{"Rectangle", "[", 
+             RowBox[{"{", 
+              RowBox[{"1.2", ",", "0"}], "}"}], "]"}]}], "}"}], ",", 
+          "\"\<http://www.wolfram.com/products/mathematica\>\""}], "]"}], 
+        ",", "\"\<Mathematica\>\""}], "]"}]}], "}"}], ",", 
+    RowBox[{"ImageSize", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"150", ",", "75"}], "}"}]}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.7093821400068016`*^9, 3.709382140727229*^9}, {
+  3.7093821906896267`*^9, 
+  3.7093821919770775`*^9}},ExpressionUUID->"5d83e0c8-c46b-470c-bed7-\
+f5dfb71e6657"],
+
+Cell[BoxData[
+ GraphicsBox[{
+   TagBox[
+    TooltipBox[
+     TagBox[
+      TagBox[{
+        {RGBColor[0.5, 0, 0.5], RectangleBox[{0, 0}]}},
+       EventHandlerTag[{"MouseClicked" :> FrontEndExecute[{
+            NotebookLocate[{
+              URL["http://www.baidu.com"], None}]}], Method -> "Preemptive", 
+         PassEventsDown -> Automatic, PassEventsUp -> True}]],
+      Annotation[#, "http://www.baidu.com", "Hyperlink"]& ],
+     "\"Wolfram Research\"",
+     TooltipStyle->"TextStyling"],
+    Annotation[#, "Wolfram Research", "Tooltip"]& ], 
+   TagBox[
+    TooltipBox[
+     TagBox[
+      TagBox[{
+        {RGBColor[1, 0.5, 0], RectangleBox[{1.2, 0}]}},
+       EventHandlerTag[{"MouseClicked" :> FrontEndExecute[{
+            NotebookLocate[{
+              URL["http://www.wolfram.com/products/mathematica"], None}]}], 
+         Method -> "Preemptive", PassEventsDown -> Automatic, PassEventsUp -> 
+         True}]],
+      Annotation[#, "http://www.wolfram.com/products/mathematica", 
+       "Hyperlink"]& ],
+     "\"Mathematica\"",
+     TooltipStyle->"TextStyling"],
+    Annotation[#, "Mathematica", "Tooltip"]& ]},
+  ImageSize->{150, 75}]], "Output",
+ CellChangeTimes->{3.709382141360843*^9, 
+  3.709382199062071*^9},ExpressionUUID->"db2a2cda-5045-42fe-bc6e-\
+dcc07c070539"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"TABLE", "=", 
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{"Hyperlink", "[", 
+      RowBox[{"i", ",", 
+       RowBox[{"asso", "[", 
+        RowBox[{"[", "1", "]"}], "]"}]}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"i", ",", 
+       RowBox[{"Length", "@", 
+        RowBox[{"asso", "[", 
+         RowBox[{"[", "1", "]"}], "]"}]}]}], "}"}]}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.7093819462432313`*^9, 
+  3.7093819758719234`*^9}},ExpressionUUID->"132a6cc7-d007-406f-bbe0-\
+bb30d069f416"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["TABLE"], "Input",ExpressionUUID->"e2af1a3c-95e1-42bd-ba6c-927eccc33582"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   TagBox[
+    ButtonBox[
+     PaneSelectorBox[{False->"1", True->
+      StyleBox["1", "HyperlinkActive"]}, Dynamic[
+       CurrentValue["MouseOver"]],
+      BaseStyle->{"Hyperlink"},
+      FrameMargins->0,
+      ImageSize->Automatic],
+     BaseStyle->"Hyperlink",
+     ButtonData:>{{
+       "https://github.com/Microsoft/LightGBM/blob/\
+102dc5fd7b5d2bae80cdf35c22d389952c10c631/docs/Parameters.md", 
+        "https://github.com/Microsoft/LightGBM/blob/\
+102dc5fd7b5d2bae80cdf35c22d389952c10c631/docs/Python-API.md", 
+        "https://github.com/Microsoft/LightGBM/blob/master/docs/Python-API.md#\
+common-methods", 
+        "https://github.com/Microsoft/LightGBM/blob/master/examples/python-\
+guide/simple_example.py", 
+        "https://github.com/Microsoft/LightGBM/blob/master/examples/\
+regression/train.conf", 
+        "https://github.com/Microsoft/LightGBM/wiki/Features"}, None},
+     ButtonNote->ButtonData],
+    Annotation[#, {
+     "https://github.com/Microsoft/LightGBM/blob/\
+102dc5fd7b5d2bae80cdf35c22d389952c10c631/docs/Parameters.md", 
+      "https://github.com/Microsoft/LightGBM/blob/\
+102dc5fd7b5d2bae80cdf35c22d389952c10c631/docs/Python-API.md", 
+      "https://github.com/Microsoft/LightGBM/blob/master/docs/Python-API.md#\
+common-methods", 
+      "https://github.com/Microsoft/LightGBM/blob/master/examples/python-\
+guide/simple_example.py", 
+      "https://github.com/Microsoft/LightGBM/blob/master/examples/regression/\
+train.conf", "https://github.com/Microsoft/LightGBM/wiki/Features"}, 
+     "Hyperlink"]& ], ",", 
+   TagBox[
+    ButtonBox[
+     PaneSelectorBox[{False->"2", True->
+      StyleBox["2", "HyperlinkActive"]}, Dynamic[
+       CurrentValue["MouseOver"]],
+      BaseStyle->{"Hyperlink"},
+      FrameMargins->0,
+      ImageSize->Automatic],
+     BaseStyle->"Hyperlink",
+     ButtonData:>{{
+       "https://github.com/Microsoft/LightGBM/blob/\
+102dc5fd7b5d2bae80cdf35c22d389952c10c631/docs/Parameters.md", 
+        "https://github.com/Microsoft/LightGBM/blob/\
+102dc5fd7b5d2bae80cdf35c22d389952c10c631/docs/Python-API.md", 
+        "https://github.com/Microsoft/LightGBM/blob/master/docs/Python-API.md#\
+common-methods", 
+        "https://github.com/Microsoft/LightGBM/blob/master/examples/python-\
+guide/simple_example.py", 
+        "https://github.com/Microsoft/LightGBM/blob/master/examples/\
+regression/train.conf", 
+        "https://github.com/Microsoft/LightGBM/wiki/Features"}, None},
+     ButtonNote->ButtonData],
+    Annotation[#, {
+     "https://github.com/Microsoft/LightGBM/blob/\
+102dc5fd7b5d2bae80cdf35c22d389952c10c631/docs/Parameters.md", 
+      "https://github.com/Microsoft/LightGBM/blob/\
+102dc5fd7b5d2bae80cdf35c22d389952c10c631/docs/Python-API.md", 
+      "https://github.com/Microsoft/LightGBM/blob/master/docs/Python-API.md#\
+common-methods", 
+      "https://github.com/Microsoft/LightGBM/blob/master/examples/python-\
+guide/simple_example.py", 
+      "https://github.com/Microsoft/LightGBM/blob/master/examples/regression/\
+train.conf", "https://github.com/Microsoft/LightGBM/wiki/Features"}, 
+     "Hyperlink"]& ], ",", 
+   TagBox[
+    ButtonBox[
+     PaneSelectorBox[{False->"3", True->
+      StyleBox["3", "HyperlinkActive"]}, Dynamic[
+       CurrentValue["MouseOver"]],
+      BaseStyle->{"Hyperlink"},
+      FrameMargins->0,
+      ImageSize->Automatic],
+     BaseStyle->"Hyperlink",
+     ButtonData:>{{
+       "https://github.com/Microsoft/LightGBM/blob/\
+102dc5fd7b5d2bae80cdf35c22d389952c10c631/docs/Parameters.md", 
+        "https://github.com/Microsoft/LightGBM/blob/\
+102dc5fd7b5d2bae80cdf35c22d389952c10c631/docs/Python-API.md", 
+        "https://github.com/Microsoft/LightGBM/blob/master/docs/Python-API.md#\
+common-methods", 
+        "https://github.com/Microsoft/LightGBM/blob/master/examples/python-\
+guide/simple_example.py", 
+        "https://github.com/Microsoft/LightGBM/blob/master/examples/\
+regression/train.conf", 
+        "https://github.com/Microsoft/LightGBM/wiki/Features"}, None},
+     ButtonNote->ButtonData],
+    Annotation[#, {
+     "https://github.com/Microsoft/LightGBM/blob/\
+102dc5fd7b5d2bae80cdf35c22d389952c10c631/docs/Parameters.md", 
+      "https://github.com/Microsoft/LightGBM/blob/\
+102dc5fd7b5d2bae80cdf35c22d389952c10c631/docs/Python-API.md", 
+      "https://github.com/Microsoft/LightGBM/blob/master/docs/Python-API.md#\
+common-methods", 
+      "https://github.com/Microsoft/LightGBM/blob/master/examples/python-\
+guide/simple_example.py", 
+      "https://github.com/Microsoft/LightGBM/blob/master/examples/regression/\
+train.conf", "https://github.com/Microsoft/LightGBM/wiki/Features"}, 
+     "Hyperlink"]& ], ",", 
+   TagBox[
+    ButtonBox[
+     PaneSelectorBox[{False->"4", True->
+      StyleBox["4", "HyperlinkActive"]}, Dynamic[
+       CurrentValue["MouseOver"]],
+      BaseStyle->{"Hyperlink"},
+      FrameMargins->0,
+      ImageSize->Automatic],
+     BaseStyle->"Hyperlink",
+     ButtonData:>{{
+       "https://github.com/Microsoft/LightGBM/blob/\
+102dc5fd7b5d2bae80cdf35c22d389952c10c631/docs/Parameters.md", 
+        "https://github.com/Microsoft/LightGBM/blob/\
+102dc5fd7b5d2bae80cdf35c22d389952c10c631/docs/Python-API.md", 
+        "https://github.com/Microsoft/LightGBM/blob/master/docs/Python-API.md#\
+common-methods", 
+        "https://github.com/Microsoft/LightGBM/blob/master/examples/python-\
+guide/simple_example.py", 
+        "https://github.com/Microsoft/LightGBM/blob/master/examples/\
+regression/train.conf", 
+        "https://github.com/Microsoft/LightGBM/wiki/Features"}, None},
+     ButtonNote->ButtonData],
+    Annotation[#, {
+     "https://github.com/Microsoft/LightGBM/blob/\
+102dc5fd7b5d2bae80cdf35c22d389952c10c631/docs/Parameters.md", 
+      "https://github.com/Microsoft/LightGBM/blob/\
+102dc5fd7b5d2bae80cdf35c22d389952c10c631/docs/Python-API.md", 
+      "https://github.com/Microsoft/LightGBM/blob/master/docs/Python-API.md#\
+common-methods", 
+      "https://github.com/Microsoft/LightGBM/blob/master/examples/python-\
+guide/simple_example.py", 
+      "https://github.com/Microsoft/LightGBM/blob/master/examples/regression/\
+train.conf", "https://github.com/Microsoft/LightGBM/wiki/Features"}, 
+     "Hyperlink"]& ], ",", 
+   TagBox[
+    ButtonBox[
+     PaneSelectorBox[{False->"5", True->
+      StyleBox["5", "HyperlinkActive"]}, Dynamic[
+       CurrentValue["MouseOver"]],
+      BaseStyle->{"Hyperlink"},
+      FrameMargins->0,
+      ImageSize->Automatic],
+     BaseStyle->"Hyperlink",
+     ButtonData:>{{
+       "https://github.com/Microsoft/LightGBM/blob/\
+102dc5fd7b5d2bae80cdf35c22d389952c10c631/docs/Parameters.md", 
+        "https://github.com/Microsoft/LightGBM/blob/\
+102dc5fd7b5d2bae80cdf35c22d389952c10c631/docs/Python-API.md", 
+        "https://github.com/Microsoft/LightGBM/blob/master/docs/Python-API.md#\
+common-methods", 
+        "https://github.com/Microsoft/LightGBM/blob/master/examples/python-\
+guide/simple_example.py", 
+        "https://github.com/Microsoft/LightGBM/blob/master/examples/\
+regression/train.conf", 
+        "https://github.com/Microsoft/LightGBM/wiki/Features"}, None},
+     ButtonNote->ButtonData],
+    Annotation[#, {
+     "https://github.com/Microsoft/LightGBM/blob/\
+102dc5fd7b5d2bae80cdf35c22d389952c10c631/docs/Parameters.md", 
+      "https://github.com/Microsoft/LightGBM/blob/\
+102dc5fd7b5d2bae80cdf35c22d389952c10c631/docs/Python-API.md", 
+      "https://github.com/Microsoft/LightGBM/blob/master/docs/Python-API.md#\
+common-methods", 
+      "https://github.com/Microsoft/LightGBM/blob/master/examples/python-\
+guide/simple_example.py", 
+      "https://github.com/Microsoft/LightGBM/blob/master/examples/regression/\
+train.conf", "https://github.com/Microsoft/LightGBM/wiki/Features"}, 
+     "Hyperlink"]& ], ",", 
+   TagBox[
+    ButtonBox[
+     PaneSelectorBox[{False->"6", True->
+      StyleBox["6", "HyperlinkActive"]}, Dynamic[
+       CurrentValue["MouseOver"]],
+      BaseStyle->{"Hyperlink"},
+      FrameMargins->0,
+      ImageSize->Automatic],
+     BaseStyle->"Hyperlink",
+     ButtonData:>{{
+       "https://github.com/Microsoft/LightGBM/blob/\
+102dc5fd7b5d2bae80cdf35c22d389952c10c631/docs/Parameters.md", 
+        "https://github.com/Microsoft/LightGBM/blob/\
+102dc5fd7b5d2bae80cdf35c22d389952c10c631/docs/Python-API.md", 
+        "https://github.com/Microsoft/LightGBM/blob/master/docs/Python-API.md#\
+common-methods", 
+        "https://github.com/Microsoft/LightGBM/blob/master/examples/python-\
+guide/simple_example.py", 
+        "https://github.com/Microsoft/LightGBM/blob/master/examples/\
+regression/train.conf", 
+        "https://github.com/Microsoft/LightGBM/wiki/Features"}, None},
+     ButtonNote->ButtonData],
+    Annotation[#, {
+     "https://github.com/Microsoft/LightGBM/blob/\
+102dc5fd7b5d2bae80cdf35c22d389952c10c631/docs/Parameters.md", 
+      "https://github.com/Microsoft/LightGBM/blob/\
+102dc5fd7b5d2bae80cdf35c22d389952c10c631/docs/Python-API.md", 
+      "https://github.com/Microsoft/LightGBM/blob/master/docs/Python-API.md#\
+common-methods", 
+      "https://github.com/Microsoft/LightGBM/blob/master/examples/python-\
+guide/simple_example.py", 
+      "https://github.com/Microsoft/LightGBM/blob/master/examples/regression/\
+train.conf", "https://github.com/Microsoft/LightGBM/wiki/Features"}, 
+     "Hyperlink"]& ]}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.70938205884723*^9},ExpressionUUID->"df2b3b57-9bd7-4644-bc3b-5d2df3707e38"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<\>\"", ","}], "]"}]], "Input",
+ CellChangeTimes->{{3.7093813060698442`*^9, 3.709381315470192*^9}, 
+   3.7093813684227695`*^9},ExpressionUUID->"a5938f1a-e222-4db8-98ac-\
+36b60e7c2569"],
+
+Cell[BoxData[
+ RowBox[{"KeyValueMap", "[", 
+  RowBox[{"Export", "[", 
+   RowBox[{"Fileasso", "[", 
+    RowBox[{"[", "1", "]"}], "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.7093812324612026`*^9, 
+  3.7093812715278473`*^9}},ExpressionUUID->"5ccfa0c1-2b68-41c6-ae54-\
+60d4743779c6"],
+
+Cell[BoxData[
+ RowBox[{"Export", "[", "\"\<\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.709381235954706*^9, 
+  3.7093812406608005`*^9}},ExpressionUUID->"98f5733c-d871-464e-938e-\
+afc5c65e6ebc"],
+
+Cell[BoxData[
+ RowBox[{"Export", "[", "\"\<url\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.709380942720372*^9, 
+  3.70938094741486*^9}},ExpressionUUID->"1dcbacb4-2789-4530-bfa7-\
+7b8ac49253ca"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -488,8 +1140,8 @@ Cell[BoxData[
  RowBox[{
   RowBox[{"nameTemplate", "=", 
    RowBox[{
-   "StringTemplate", "@", "\"\<\\n<DT><H3> `1` </H3>\\n<DL>\\n\>\""}]}], 
-  ";"}]], "Input",
+   "StringTemplate", "@", 
+    "\"\<<DT><H3> `1` </H3>\\n<DL>\\n`2`</DL>\\n\>\""}]}], ";"}]], "Input",
  CellChangeTimes->{{3.7092710732662954`*^9, 3.709271109276167*^9}, {
    3.70927127583829*^9, 3.7092712995281363`*^9}, {3.7092713551140428`*^9, 
    3.709271358419649*^9}, {3.709271858962186*^9, 3.7092718741342144`*^9}, {
@@ -498,9 +1150,74 @@ Cell[BoxData[
    3.7092726910981593`*^9, {3.709272783486388*^9, 3.709272789921001*^9}, 
    3.70927462751481*^9, {3.709275719274048*^9, 3.7092757195704484`*^9}, {
    3.709275774393587*^9, 3.7092757855140095`*^9}, {3.70927587764109*^9, 
-   3.7092758795950937`*^9}, {3.7092760113277035`*^9, 
-   3.709276011748904*^9}},ExpressionUUID->"2a1616bf-8990-4ca4-9b27-\
+   3.7092758795950937`*^9}, {3.7092760113277035`*^9, 3.709276011748904*^9}, {
+   3.7093828629026365`*^9, 3.7093828835260477`*^9}, {3.709383453405919*^9, 
+   3.7093834543895335`*^9}},ExpressionUUID->"2a1616bf-8990-4ca4-9b27-\
 e3ecaf8e99e8"],
+
+Cell[BoxData[
+ RowBox[{"source", "=", 
+  RowBox[{
+   RowBox[{"StringJoin", "[", 
+    RowBox[{
+     RowBox[{"KeyValueMap", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"TemplateApply", "[", 
+         RowBox[{"nameTemplate", ",", 
+          RowBox[{"{", 
+           RowBox[{"#1", ",", 
+            RowBox[{"StringRiffle", "[", 
+             RowBox[{
+              RowBox[{
+               RowBox[{
+                RowBox[{"TemplateApply", "[", 
+                 RowBox[{"urlTemplate", ",", "#"}], "]"}], "&"}], "/@", 
+               "#2"}], ",", "\"\<\\n\>\""}], "]"}]}], "}"}]}], "]"}], "&"}], 
+       ",", 
+       RowBox[{"asso", "[", 
+        RowBox[{"[", 
+         RowBox[{"1", ";;", "2"}], "]"}], "]"}]}], "]"}], ",", 
+     "\"\<\\n\>\""}], "]"}], "//", "CopyToClipboard"}]}]], "Input",
+ CellChangeTimes->{{3.709382885392267*^9, 3.7093829797499275`*^9}, {
+   3.709383037798109*^9, 3.7093830821264744`*^9}, {3.7093832411266327`*^9, 
+   3.7093832424377375`*^9}, 3.7093833013421974`*^9, {3.7093834686058235`*^9, 
+   3.7093834703524675`*^9}},ExpressionUUID->"6cd60237-cd26-481c-afbc-\
+a863afad776c"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"StringRiffle", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"TemplateApply", "[", 
+      RowBox[{"urlTemplate", ",", "#"}], "]"}], "&"}], "/@", 
+    RowBox[{"asso", "[", 
+     RowBox[{"[", "1", "]"}], "]"}]}], ",", "\"\<\\n\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.709382959404481*^9, 
+  3.7093829647022696`*^9}},ExpressionUUID->"ca618926-c204-4285-be03-\
+3fb7a4388a49"],
+
+Cell[BoxData["\<\"<DT><A \
+HREF=\\\"https://github.com/Microsoft/LightGBM/blob/\
+102dc5fd7b5d2bae80cdf35c22d389952c10c631/docs/Parameters.md\\\"></A>\\n\\n<DT>\
+<A HREF=\\\"https://github.com/Microsoft/LightGBM/blob/\
+102dc5fd7b5d2bae80cdf35c22d389952c10c631/docs/Python-API.md\\\"></A>\\n\\n<DT>\
+<A HREF=\\\"https://github.com/Microsoft/LightGBM/blob/master/docs/Python-API.\
+md#common-methods\\\"></A>\\n\\n<DT><A \
+HREF=\\\"https://github.com/Microsoft/LightGBM/blob/master/examples/python-\
+guide/simple_example.py\\\"></A>\\n\\n<DT><A \
+HREF=\\\"https://github.com/Microsoft/LightGBM/blob/master/examples/\
+regression/train.conf\\\"></A>\\n\\n<DT><A \
+HREF=\\\"https://github.com/Microsoft/LightGBM/wiki/Features\\\"></A>\\n\"\>"]\
+, "Output",
+ CellChangeTimes->{{3.7093828953691845`*^9, 3.7093829173736706`*^9}, {
+  3.7093829555913973`*^9, 
+  3.7093829651248913`*^9}},ExpressionUUID->"b30583f9-6e31-47bf-8ad9-\
+a9d65279f17e"]
+}, Open  ]],
 
 Cell[BoxData[
  RowBox[{
@@ -563,30 +1280,6 @@ Cell[BoxData[{
   3.7092726201992645`*^9}},ExpressionUUID->"c8311f17-24bb-48e0-994a-\
 50f7217a7d8f"],
 
-Cell[BoxData[
- TemplateBox[{
-  "DeleteFile","fdnfnd",
-   "\"Directory or file \
-\\!\\(\\*RowBox[{\\\"\\\\\\\"sourceExport.html\\\\\\\"\\\"}]\\) not found.\"",
-   2,34,31,27323949500221994853,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{
-  3.709376014446334*^9},ExpressionUUID->"1ab18829-d14d-456c-a709-\
-5f9817053a98"],
-
-Cell[BoxData["$Failed"], "Output",
- CellChangeTimes->{{3.709271618272756*^9, 3.709271621678562*^9}, 
-   3.709271981370221*^9, {3.709272160473426*^9, 3.7092721644488335`*^9}, {
-   3.7092725904235888`*^9, 3.709272621808068*^9}, 3.7092726940079675`*^9, 
-   3.709272796718014*^9, {3.7092741461369443`*^9, 3.709274148607749*^9}, 
-   3.709274196042441*^9, 3.7092744597936044`*^9, {3.709274523204755*^9, 
-   3.70927452585616*^9}, 3.7092748117542677`*^9, {3.7092748666582155`*^9, 
-   3.7092748790192394`*^9}, 3.709275726196861*^9, 3.709275788813616*^9, 
-   3.7092758227891088`*^9, 3.7092758835987015`*^9, 3.7092760187803183`*^9, 
-   3.709277483759532*^9, 3.7092776069355726`*^9, 
-   3.709376014461961*^9},ExpressionUUID->"975d3d1e-5827-42bb-a06e-\
-5fe5c0eb7e84"],
-
 Cell[BoxData["\<\"C:\\\\Users\\\\admin\\\\Documents\\\\sourceExport.html\"\>"]\
 , "Output",
  CellChangeTimes->{{3.709271618272756*^9, 3.709271621678562*^9}, 
@@ -597,9 +1290,9 @@ Cell[BoxData["\<\"C:\\\\Users\\\\admin\\\\Documents\\\\sourceExport.html\"\>"]\
    3.70927452585616*^9}, 3.7092748117542677`*^9, {3.7092748666582155`*^9, 
    3.7092748790192394`*^9}, 3.709275726196861*^9, 3.709275788813616*^9, 
    3.7092758227891088`*^9, 3.7092758835987015`*^9, 3.7092760187803183`*^9, 
-   3.709277483759532*^9, 3.7092776069355726`*^9, 
-   3.709376014461961*^9},ExpressionUUID->"425f47c7-439f-4769-9762-\
-c1497b6de5e4"]
+   3.709277483759532*^9, 3.7092776069355726`*^9, 3.709376014461961*^9, 
+   3.7093799399257984`*^9},ExpressionUUID->"367fe340-9be4-4e7c-a0b1-\
+f6fe41b2bfd9"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
@@ -608,8 +1301,8 @@ Cell["", "Section",ExpressionUUID->"df05eb22-e626-4c3e-8c9c-a28b0eb0c5a0"]
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{1707, 877},
-WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+WindowSize->{1691, 877},
+WindowMargins->{{-8, Automatic}, {Automatic, 0}},
 FrontEndVersion->"11.1 for Microsoft Windows (64-bit) (2017\:5e743\:670813\
 \:65e5)",
 StyleDefinitions->"Default.nb"
@@ -629,107 +1322,173 @@ Cell[CellGroupData[{
 Cell[580, 22, 163, 3, 201, "Title", "ExpressionUUID" -> \
 "b55ff4fb-763e-4230-bcf6-0c1ff5aab690"],
 Cell[CellGroupData[{
-Cell[768, 29, 227, 4, 144, "Chapter", "ExpressionUUID" -> \
+Cell[768, 29, 253, 4, 144, "Chapter", "ExpressionUUID" -> \
 "0f551611-71d2-44d6-9405-11f843acb1b4"],
 Cell[CellGroupData[{
-Cell[1020, 37, 138, 3, 95, "Subsection", "ExpressionUUID" -> \
+Cell[1046, 37, 138, 3, 95, "Subsection", "ExpressionUUID" -> \
 "843a4c8e-5f99-426f-9f61-5fe878a3b758"],
-Cell[1161, 42, 556, 10, 98, "Text", "ExpressionUUID" -> \
+Cell[1187, 42, 556, 10, 98, "Text", "ExpressionUUID" -> \
 "572fb7ae-3ec0-4213-b7ae-63334351e8fb"],
 Cell[CellGroupData[{
-Cell[1742, 56, 208, 4, 76, "Subsubsection", "ExpressionUUID" -> \
+Cell[1768, 56, 208, 4, 76, "Subsubsection", "ExpressionUUID" -> \
 "17288a01-4a80-45db-94fa-4f4ec6b9a938"],
-Cell[1953, 62, 294, 7, 98, "Text", "ExpressionUUID" -> \
+Cell[1979, 62, 294, 7, 98, "Text", "ExpressionUUID" -> \
 "0532dbcc-a2f6-4cd9-8cc2-14c981473769"],
-Cell[2250, 71, 728, 12, 98, "Text", "ExpressionUUID" -> \
+Cell[2276, 71, 728, 12, 98, "Text", "ExpressionUUID" -> \
 "4dcb122f-77dd-40a1-a911-72419ab39703"],
-Cell[2981, 85, 283, 7, 98, "Text", "ExpressionUUID" -> \
+Cell[3007, 85, 283, 7, 98, "Text", "ExpressionUUID" -> \
 "8990f5cd-3528-4b6c-b3fc-11b25b2c42fd"],
-Cell[3267, 94, 283, 7, 98, "Text", "ExpressionUUID" -> \
+Cell[3293, 94, 283, 7, 98, "Text", "ExpressionUUID" -> \
 "e0877cf1-e028-4eb4-86e5-002658b56835"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[3587, 106, 159, 3, 76, "Subsubsection", "ExpressionUUID" -> \
+Cell[3613, 106, 159, 3, 76, "Subsubsection", "ExpressionUUID" -> \
 "27f20078-911d-4dbc-9f89-3dc2d889b4c0"],
-Cell[3749, 111, 309, 8, 136, "Text", "ExpressionUUID" -> \
+Cell[3775, 111, 309, 8, 136, "Text", "ExpressionUUID" -> \
 "f51f6364-5d92-4615-9a24-f487b10f7ad8"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[4095, 124, 159, 3, 76, "Subsubsection", "ExpressionUUID" -> \
+Cell[4121, 124, 159, 3, 76, "Subsubsection", "ExpressionUUID" -> \
 "e7305ea7-7dbe-4658-b81d-6326d51c85e1"],
-Cell[4257, 129, 330, 8, 98, "Text", "ExpressionUUID" -> \
+Cell[4283, 129, 330, 8, 98, "Text", "ExpressionUUID" -> \
 "e7e55f20-4cb0-4410-b09d-c3f7f7484cea"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[4624, 142, 172, 3, 76, "Subsubsection", "ExpressionUUID" -> \
+Cell[4650, 142, 172, 3, 76, "Subsubsection", "ExpressionUUID" -> \
 "efa37307-2faa-42fc-bd4d-90fc43ec163a"],
-Cell[4799, 147, 153, 3, 60, "Text", "ExpressionUUID" -> \
+Cell[4825, 147, 153, 3, 60, "Text", "ExpressionUUID" -> \
 "25b14319-7c24-490e-89ae-71e17806e87e"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[5001, 156, 209, 4, 95, "Subsection", "ExpressionUUID" -> \
+Cell[5027, 156, 209, 4, 95, "Subsection", "ExpressionUUID" -> \
 "5cedb9ef-f74e-426a-a1bb-17e86bec7c48"],
-Cell[5213, 162, 422, 8, 98, "Text", "ExpressionUUID" -> \
+Cell[5239, 162, 422, 8, 98, "Text", "ExpressionUUID" -> \
 "42bf46f2-e273-4e3b-aace-25601f538bd7"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[5672, 175, 74, 0, 140, "Section", "ExpressionUUID" -> \
+Cell[5698, 175, 74, 0, 140, "Section", "ExpressionUUID" -> \
 "53e4eecf-fb57-497d-b484-50a101b74ca0"],
-Cell[5749, 177, 387, 9, 140, "Input", "ExpressionUUID" -> \
+Cell[5775, 177, 387, 9, 140, "Input", "ExpressionUUID" -> \
 "2ce34eb2-2f89-4d68-a0a2-4ceec2cd8a68"],
-Cell[6139, 188, 379, 8, 61, "Input", "ExpressionUUID" -> \
+Cell[6165, 188, 379, 8, 61, "Input", "ExpressionUUID" -> \
 "5c9714e3-c33f-4051-9619-cd787b1b07fc"],
-Cell[6521, 198, 301, 8, 61, "Input", "ExpressionUUID" -> \
+Cell[6547, 198, 301, 8, 61, "Input", "ExpressionUUID" -> \
 "a779fb08-5a8c-447b-b3bd-dfa62fc91da1"],
-Cell[6825, 208, 511, 12, 61, "Input", "ExpressionUUID" -> \
+Cell[CellGroupData[{
+Cell[6873, 210, 427, 8, 61, "Input", "ExpressionUUID" -> \
 "158b8ed8-26fd-4d6d-b380-042194a1dc96"],
-Cell[7339, 222, 384, 10, 101, "Input", "ExpressionUUID" -> \
+Cell[7303, 220, 386, 8, 61, "Output", "ExpressionUUID" -> \
+"93d9b862-2546-49f2-848c-a7d938ef27d5"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7726, 233, 256, 6, 61, "Input", "ExpressionUUID" -> \
+"e2cbf7c1-67eb-4c07-8a0f-5990c5c6234e"],
+Cell[7985, 241, 322, 6, 61, "Output", "ExpressionUUID" -> \
+"b435f08b-7b4e-4b25-acc8-18866bcbce0f"]
+}, Open  ]],
+Cell[8322, 250, 384, 10, 101, "Input", "ExpressionUUID" -> \
 "98745cab-1e9d-4b26-9ca9-7215b2e91891"],
-Cell[7726, 234, 591, 16, 101, "Input", "ExpressionUUID" -> \
+Cell[8709, 262, 591, 16, 101, "Input", "ExpressionUUID" -> \
 "4e07d104-de6b-4ce7-8338-8fffad966347"],
-Cell[8320, 252, 317, 8, 61, "Input", "ExpressionUUID" -> \
+Cell[9303, 280, 317, 8, 61, "Input", "ExpressionUUID" -> \
 "654cf4e9-a2e7-47bd-892c-18a52275b68d"],
-Cell[8640, 262, 5363, 140, 764, "Input", "ExpressionUUID" -> \
+Cell[9623, 290, 5363, 140, 764, "Input", "ExpressionUUID" -> \
 "6ab7d532-9c35-422b-8a05-741b2874e492"],
-Cell[14006, 404, 323, 8, 61, "Input", "ExpressionUUID" -> \
+Cell[14989, 432, 323, 8, 61, "Input", "ExpressionUUID" -> \
 "38a7458f-a47b-4f4c-ae09-7ac41a9ca95f"],
-Cell[14332, 414, 348, 9, 61, "Input", "ExpressionUUID" -> \
+Cell[15315, 442, 348, 9, 61, "Input", "ExpressionUUID" -> \
 "59e206d3-3b91-4a53-8763-1600b275619e"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[14717, 428, 162, 3, 140, "Section", "ExpressionUUID" -> \
+Cell[15700, 456, 162, 3, 140, "Section", "ExpressionUUID" -> \
 "5a47dcba-5284-4668-875e-c7dbbf8d6657"],
 Cell[CellGroupData[{
-Cell[14904, 435, 167, 3, 95, "Subsection", "ExpressionUUID" -> \
+Cell[15887, 463, 167, 3, 95, "Subsection", "ExpressionUUID" -> \
 "d41d6aab-b757-4497-a854-e20c08e244ea"],
-Cell[15074, 440, 192, 4, 61, "Input", "ExpressionUUID" -> \
-"a3bc9cb6-b5ae-4565-a0f3-a0962c60fd46"]
+Cell[16057, 468, 192, 4, 61, "Input", "ExpressionUUID" -> \
+"a3bc9cb6-b5ae-4565-a0f3-a0962c60fd46"],
+Cell[CellGroupData[{
+Cell[16274, 476, 208, 5, 61, "Input", "ExpressionUUID" -> \
+"0c1dbe15-8e4b-46fd-9a04-ba2b695ca595"],
+Cell[16485, 483, 797, 16, 321, "Output", "ExpressionUUID" -> \
+"eb86cc42-0be3-4700-8b2b-ef1188cf0bec"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[15303, 449, 175, 3, 95, "Subsection", "ExpressionUUID" -> \
+Cell[17319, 504, 201, 4, 61, "Input", "ExpressionUUID" -> \
+"9f150774-398d-42cb-ad5f-709f8b79c34a"],
+Cell[17523, 510, 178, 3, 86, "Output", "ExpressionUUID" -> \
+"d3f560df-4584-4344-b55b-81527bc37e03"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[17738, 518, 204, 4, 61, "Input", "ExpressionUUID" -> \
+"6c9adb79-1412-49c2-b043-50be04475029"],
+Cell[17945, 524, 211, 4, 86, "Output", "ExpressionUUID" -> \
+"f408e404-0a4b-4fee-8a37-b399c5ede9b9"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[18193, 533, 255, 5, 61, "Input", "ExpressionUUID" -> \
+"7df5328c-be7f-4407-b034-243a671fbf1e"],
+Cell[18451, 540, 219, 4, 86, "Output", "ExpressionUUID" -> \
+"21ed0c07-6e2d-4662-a1c4-00ad3d073db0"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[18707, 549, 86, 0, 61, "Input", "ExpressionUUID" -> \
+"e70f40d7-9e28-43d4-abd1-bccf218b17ef"],
+Cell[18796, 551, 9397, 209, 91, "Output", "ExpressionUUID" -> \
+"b0b99605-e49e-4d4a-999f-67b0a046ffaf"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[28230, 765, 1241, 34, 179, "Input", "ExpressionUUID" -> \
+"5d83e0c8-c46b-470c-bed7-f5dfb71e6657"],
+Cell[29474, 801, 1282, 33, 205, "Output", "ExpressionUUID" -> \
+"db2a2cda-5045-42fe-bc6e-dcc07c070539"]
+}, Open  ]],
+Cell[30771, 837, 543, 16, 61, "Input", "ExpressionUUID" -> \
+"132a6cc7-d007-406f-bbe0-bb30d069f416"],
+Cell[CellGroupData[{
+Cell[31339, 857, 86, 0, 61, "Input", "ExpressionUUID" -> \
+"e2af1a3c-95e1-42bd-ba6c-927eccc33582"],
+Cell[31428, 859, 9392, 208, 91, "Output", "ExpressionUUID" -> \
+"df2b3b57-9bd7-4644-bc3b-5d2df3707e38"]
+}, Open  ]],
+Cell[40835, 1070, 237, 5, 61, "Input", "ExpressionUUID" -> \
+"a5938f1a-e222-4db8-98ac-36b60e7c2569"],
+Cell[41075, 1077, 278, 7, 61, "Input", "ExpressionUUID" -> \
+"5ccfa0c1-2b68-41c6-ae54-60d4743779c6"],
+Cell[41356, 1086, 194, 4, 61, "Input", "ExpressionUUID" -> \
+"98f5733c-d871-464e-938e-afc5c65e6ebc"],
+Cell[41553, 1092, 194, 4, 61, "Input", "ExpressionUUID" -> \
+"1dcbacb4-2789-4530-bfa7-7b8ac49253ca"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[41784, 1101, 175, 3, 95, "Subsection", "ExpressionUUID" -> \
 "4d8a5713-31f1-4f82-9074-4f46a3df1bf8"],
-Cell[15481, 454, 967, 17, 608, "Input", "ExpressionUUID" -> \
+Cell[41962, 1106, 967, 17, 608, "Input", "ExpressionUUID" -> \
 "6121edb6-4d14-4966-8aea-ff9d1ad92d92"],
-Cell[16451, 473, 539, 11, 61, "Input", "ExpressionUUID" -> \
+Cell[42932, 1125, 539, 11, 61, "Input", "ExpressionUUID" -> \
 "0d65f400-7970-4ab8-be3a-63c52a423f8d"],
-Cell[16993, 486, 890, 16, 61, "Input", "ExpressionUUID" -> \
+Cell[43474, 1138, 1002, 17, 61, "Input", "ExpressionUUID" -> \
 "2a1616bf-8990-4ca4-9b27-e3ecaf8e99e8"],
-Cell[17886, 504, 1813, 41, 179, "Input", "ExpressionUUID" -> \
+Cell[44479, 1157, 1105, 28, 218, "Input", "ExpressionUUID" -> \
+"6cd60237-cd26-481c-afbc-a863afad776c"],
+Cell[CellGroupData[{
+Cell[45609, 1189, 410, 11, 61, "Input", "ExpressionUUID" -> \
+"ca618926-c204-4285-be03-3fb7a4388a49"],
+Cell[46022, 1202, 932, 16, 750, "Output", "ExpressionUUID" -> \
+"b30583f9-6e31-47bf-8ad9-a9d65279f17e"]
+}, Open  ]],
+Cell[46969, 1221, 1813, 41, 179, "Input", "ExpressionUUID" -> \
 "0154cffa-8c7f-4f84-af1f-3b9abbcc8632"],
 Cell[CellGroupData[{
-Cell[19724, 549, 648, 14, 140, "Input", "ExpressionUUID" -> \
+Cell[48807, 1266, 648, 14, 140, "Input", "ExpressionUUID" -> \
 "c8311f17-24bb-48e0-994a-50f7217a7d8f"],
-Cell[20375, 565, 343, 9, 46, "Message", "ExpressionUUID" -> \
-"1ab18829-d14d-456c-a709-5f9817053a98"],
-Cell[20721, 576, 754, 11, 86, "Output", "ExpressionUUID" -> \
-"975d3d1e-5827-42bb-a06e-5fe5c0eb7e84"],
-Cell[21478, 589, 811, 12, 86, "Output", "ExpressionUUID" -> \
-"425f47c7-439f-4769-9762-c1497b6de5e4"]
+Cell[49458, 1282, 835, 12, 61, "Output", "ExpressionUUID" -> \
+"367fe340-9be4-4e7c-a0b1-f6fe41b2bfd9"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
-Cell[22328, 606, 74, 0, 140, "Section", "ExpressionUUID" -> \
+Cell[50332, 1299, 74, 0, 140, "Section", "ExpressionUUID" -> \
 "df05eb22-e626-4c3e-8c9c-a28b0eb0c5a0"]
 }, Open  ]]
 }, Open  ]]
