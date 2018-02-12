@@ -1,0 +1,111 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3367,        103]
+NotebookOptionsPosition[      2666,         84]
+NotebookOutlinePosition[      3013,         99]
+CellTagsIndexPosition[      2970,         96]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"backStar1", "=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"ImageResize", "[", 
+      RowBox[{"#", ",", 
+       RowBox[{"{", 
+        RowBox[{"1980", ",", "1200"}], "}"}]}], "]"}], "&"}], "@", 
+    RowBox[{
+    "Import", "@", 
+     "\"\<F:\\\\Pictures\\\\Hubble \
+Telescope\\\\top100original\\\\heic0416a.tif\>\""}]}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.6259168986716623`*^9, 3.625916919168185*^9}, {
+  3.6259180002805195`*^9, 
+  3.6259180144125433`*^9}},ExpressionUUID->"11663f40-4136-4f23-a629-\
+636a544a77a3"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"backB", "=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"ImageResize", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{
+        "Import", "@", 
+         "\"\<F:\\\\Documents\\\\Mathematica\\\\Topic\\\\X6\:8d34\:819c\:8bbe\
+\:8ba1\\\\b\:9762.PNG\>\""}], "//", "ImageCrop"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"1980", ",", "1200"}], "}"}]}], "]"}], "//", 
+     RowBox[{
+      RowBox[{"Binarize", "[", 
+       RowBox[{"#", ",", ".6"}], "]"}], "&"}]}], "//", "ColorNegate"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.625917791822814*^9, 3.62591788728645*^9}, {
+  3.625917937991394*^9, 3.62591794041109*^9}, {3.6259196192535996`*^9, 
+  3.625919624861561*^9}},ExpressionUUID->"f8adf5ae-6474-4b8b-8b72-\
+9055fe96781d"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<B\:9762\:56fe.jpg\>\"", ",", "backStar1"}], "]"}]], "Input",
+ CellChangeTimes->{{3.625919704248807*^9, 
+  3.6259197306505127`*^9}},ExpressionUUID->"5b866e37-0015-46b9-9a32-\
+34cb6ece8579"],
+
+Cell[BoxData["\<\"B\:9762\:56fe.jpg\"\>"], "Output",
+ CellChangeTimes->{{3.6259197259641933`*^9, 
+  3.6259197312799587`*^9}},ExpressionUUID->"bddf8973-fc83-49a8-ac02-\
+28630061d27c"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"ImageAdd", "[", 
+  RowBox[{"backB", ",", "backStar1"}], "]"}]], "Input",
+ CellChangeTimes->{{3.6259179014875135`*^9, 3.6259179282574787`*^9}, {
+  3.625918242920422*^9, 3.6259182583853903`*^9}, {3.6259196277195854`*^9, 
+  3.625919629004505*^9}},ExpressionUUID->"44a7c425-f975-4f51-ae6f-\
+085c5c123c04"]
+},
+WindowSize->{1520, 805},
+WindowMargins->{{-9, Automatic}, {Automatic, 0}},
+FrontEndVersion->"11.2 for Microsoft Windows (64-bit) (September 10, 2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 550, 16, 43, "Input",ExpressionUUID->"11663f40-4136-4f23-a629-636a544a77a3"],
+Cell[1111, 38, 759, 21, 78, "Input",ExpressionUUID->"f8adf5ae-6474-4b8b-8b72-9055fe96781d"],
+Cell[CellGroupData[{
+Cell[1895, 63, 242, 5, 48, "Input",ExpressionUUID->"5b866e37-0015-46b9-9a32-34cb6ece8579"],
+Cell[2140, 70, 182, 3, 49, "Output",ExpressionUUID->"bddf8973-fc83-49a8-ac02-28630061d27c"]
+}, Open  ]],
+Cell[2337, 76, 325, 6, 43, "Input",ExpressionUUID->"44a7c425-f975-4f51-ae6f-085c5c123c04"]
+}
+]
+*)
+

@@ -1,0 +1,101 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3797,         93]
+NotebookOptionsPosition[      3137,         73]
+NotebookOutlinePosition[      3484,         88]
+CellTagsIndexPosition[      3441,         85]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+  "intersectCode", " ", "=", " ", 
+   "\"\<\nstatic float IterateIntersect(const float4 q, const float4 c, const \
+unsigned int maxIterations) {\n\tfloat4 z = q;\n\n\tfloat r2 = dot(z,z);\n\t\
+float temp;\n\n\tfloat4 scale = (float4)(1.0f, 1.0f, 1.0f, 3.0f);\n\tfloat \
+invscale = 1.0f / scale.w;\n\tfloat div = 1.0f;\n\n\tfor(uint n = 0; n < \
+maxIterations; n++) {\n\t\tif(r2 > 10000.0f) break;\n\n\t\tdiv *= invscale;\n\
+\n\t\tz.x = fabs(z.x);\n\t\tz.y = fabs(z.y);\n\t\tz.z = fabs(z.z);\n\t\t\
+if(z.x - z.y < 0.0f) {temp = z.y; z.y = z.x; z.x = temp;}\n\t\tif(z.y - z.z < \
+0.0f) {temp = z.z; z.z = z.y; z.y = temp;}\n\n\t\tz.x = (z.x - scale.x) * \
+scale.w + scale.x;\n\t\tz.y = (z.y - scale.y) * scale.w + scale.y;\n\t\tz.z = \
+scale.w * z.z;\n\t\tif(z.z > 0.5f * (scale.w - 1.0f)) z.z -= (scale.w - \
+1.0f);\n\n\t\tr2 = dot(z,z);\n\t}\n\treturn sqrt(r2) * div;\n}\n\>\""}], 
+  ";"}]], "Input",
+ CellGroupingRules->{GroupTogetherGrouping, 10000.},
+ CellID->238123343,ExpressionUUID->"b57dcc9d-9855-4d49-b55b-768fa6b68f88"],
+
+Cell["This renders the fractal using the above function:", "ExampleText",
+ CellID->1409730685,ExpressionUUID->"f3ffcac8-d11b-4e1d-9b9f-82a8ec9b8cd1"],
+
+Cell[BoxData[
+ RowBox[{"OpenCLFractalRender3D", "[", 
+  RowBox[{
+   RowBox[{"ImageSize", "\[Rule]", "800"}], ",", 
+   RowBox[{"Method", "\[Rule]", "\"\<Custom\>\""}], ",", " ", 
+   RowBox[{"\"\<IterateIntersectFunction\>\"", "\[Rule]", "intersectCode"}], 
+   ",", " ", 
+   RowBox[{"\"\<MaxIterations\>\"", "\[Rule]", "512"}], ",", 
+   RowBox[{"\"\<SingleFrame\>\"", "\[Rule]", "True"}], ",", " ", 
+   RowBox[{"\"\<SingleFrameParameters\>\"", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"7.0", ",", "2.0", ",", "1.0"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"0.5", ",", 
+        RowBox[{"-", "0.5"}], ",", "0.5", ",", "15.0"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"15.0", ",", "10.0", ",", "5.0"}], "}"}]}], "}"}]}], ",", 
+   RowBox[{"Color", "\[Rule]", 
+    RowBox[{"RandomReal", "[", 
+     RowBox[{"1", ",", 
+      RowBox[{"{", "3", "}"}]}], "]"}]}], ",", 
+   RowBox[{"Floor", "\[Rule]", "False"}], ",", 
+   RowBox[{"\"\<Shadows\>\"", "\[Rule]", "False"}], ",", 
+   RowBox[{"\"\<Specularity\>\"", "\[Rule]", "0.2"}], ",", 
+   RowBox[{"\"\<SpecularExponent\>\"", "\[Rule]", "60.0"}]}], "]"}]], "Input",
+ CellGroupingRules->{GroupTogetherGrouping, 10000.},
+ CellChangeTimes->{{3.6259241038725066`*^9, 3.6259241907970886`*^9}},
+ CellID->509569454,ExpressionUUID->"360c20c2-9b1a-4202-9b7e-46b150c164f6"]
+},
+WindowSize->{1520, 805},
+WindowMargins->{{-9, Automatic}, {Automatic, 0}},
+FrontEndVersion->"11.2 for Microsoft Windows (64-bit) (September 10, 2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 1063, 17, 943, "Input",ExpressionUUID->"b57dcc9d-9855-4d49-b55b-768fa6b68f88",
+ CellGroupingRules->{GroupTogetherGrouping, 10000.},
+ CellID->238123343],
+Cell[1624, 39, 149, 1, 32, "ExampleText",ExpressionUUID->"f3ffcac8-d11b-4e1d-9b9f-82a8ec9b8cd1",
+ CellID->1409730685],
+Cell[1776, 42, 1357, 29, 131, "Input",ExpressionUUID->"360c20c2-9b1a-4202-9b7e-46b150c164f6",
+ CellGroupingRules->{GroupTogetherGrouping, 10000.},
+ CellID->509569454]
+}
+]
+*)
+
