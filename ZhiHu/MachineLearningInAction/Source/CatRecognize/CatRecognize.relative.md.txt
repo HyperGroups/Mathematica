@@ -120,8 +120,6 @@ CPU其实在预测的时候已经够快了，我在回家的车上将本文测�
 
 知乎的文档上传功能中，markdown文件中的图片链接是https://i.imgur.com/3jnRBiT.jpg的时候，显示上传图片失败。。。知乎能穿越一下么。。。或者能支持导入本地图片链接。
 
-[ref](https://link.zhihu.com/?target=https%3A//github.com/HyperGroups/Mathematica/blob/master/ZhiHu/%25E7%258C%25AB%25E7%25A7%258D%25E8%25AF%2586%25E5%2588%25AB%2540article.nb)
-
     << "/Users/hypergroups/Nutstore/Wolfram \Mathematica/DeployProjects/MyMarkDown/MyMarkDown.wl"
 
-    Notebook2Markdown[EvaluationNotebook[],  "dirOutput" -> NotebookDirectory[], "title" -> "CatRecognize",  ImagePrefix -> "https://github.com/HyperGroups/Mathematica/blob/master/"]
+    Notebook2Markdown[EvaluationNotebook[],  "dirOutput" -> NotebookDirectory[], "title" -> "CatRecognize",  ImagePrefix -> "https://raw.githubusercontent.com/HyperGroups/Mathematica/master/\ZhiHu/MachineLearningInAction/Source/"]
