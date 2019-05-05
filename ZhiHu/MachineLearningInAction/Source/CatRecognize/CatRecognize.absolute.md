@@ -1,8 +1,8 @@
-#猫种识别？
+# 猫种识别？
 ---
 
 
-#Background
+# Background
 ---
 
 
@@ -12,14 +12,14 @@
 
 彼时我正在吃金拱门加班，于是就小小玩了一下。
 
-###Why Mathematica?
+### Why Mathematica?
 
 
 答：For Fun &&方便@顺利的话几分钟到十几分钟不等。
 
 图片是GIF的，所以用其他工具的话，如果不是有现成的服务，或我自己非常熟悉的工具，没这么快的，我也就压根不会临时这么去玩一下了。
 
-#Let's begin
+# Let's begin
 ---
 
 
@@ -46,7 +46,7 @@
 
 多年前，ImageIdentify好像是个联网功能，能精准地识别这是一只hound还是什么狗的，让我印象深刻，但也因为网络体验差等并没有深度使用，[模型联网预测慢]。这两年DeepLearning模型流行，这个也变成了本地模型。但是如果本地模型效果不好的话，用户体验的感觉就不好了。理想的话，其实还不如可以切在线模式，Wolfram自己有个更全能的模型[包含图像搜索库等]，效果更好。
 
-#GIF功能
+# GIF功能
 ---
 
 
@@ -59,7 +59,7 @@ Wolfram Mathematica非常方便用于GIF处理+图像处理生成表情包等玩
 
 导入GIF后就可以方便地挑选一张图片，然后Crop一下，去使用。
 
-#目标检测@图片裁剪
+# 目标检测@图片裁剪
 ---
 
 
@@ -73,7 +73,7 @@ Wolfram Mathematica非常方便用于GIF处理+图像处理生成表情包等玩
 
 ![OutputCell](/Users/hypergroups/Documents/githubhg/Mathematica/ZhiHu/MachineLearningInAction/Source/CatRecognize/CatRecognize/resource/CatRecognize_30.jpg)
 
-###类别映射
+### 类别映射
 
 
 因为...
@@ -81,7 +81,7 @@ Wolfram Mathematica非常方便用于GIF处理+图像处理生成表情包等玩
 
 ![OutputCell](/Users/hypergroups/Documents/githubhg/Mathematica/ZhiHu/MachineLearningInAction/Source/CatRecognize/CatRecognize/resource/CatRecognize_33.jpg)
 
-#批量识别
+# 批量识别
 ---
 
 
@@ -98,10 +98,10 @@ Wolfram Mathematica非常方便用于GIF处理+图像处理生成表情包等玩
 
 ![OutputCell](/Users/hypergroups/Documents/githubhg/Mathematica/ZhiHu/MachineLearningInAction/Source/CatRecognize/CatRecognize/resource/CatRecognize_39.jpg)
 
-###哼，肥波斯的概率比较大。
+### 哼，肥波斯的概率比较大。
 
 
-#Summary
+# Summary
 ---
 
 
@@ -111,14 +111,14 @@ Inception V3对猫更友好@@其他模型大概率判断会各种奇怪非奇怪
 
 CPU其实在预测的时候已经够快了，我在回家的车上将本文测试了一下，还是实用的。
 
-###Story:
+### Story:
 
 
 下午车上还遇到一个转换Notebook文件到MarkDown文件的程序包的Bug，然后Clean了一下一个历史代码，更新了一下，MyMarkDown.wl@欢迎使用，回头有空整理一个简单文章和文档和演示视频，有兴趣的先内测一下，提些需求，转换有问题的可以联系我。其实是很久没用，调错包了，，，然后顺便这个就成了最新的。
 
-我之前使用的MWeb写作，然后它的图床是支持七牛云-有拍云-Google相册-Imgur，发现Imgur被屏蔽了，然后Google相册关闭图床功能了，然后七牛云要域名备案。。。一翻测试，又滚回GitHub当图床了，发现能行。
+我之前使用的MWeb写作，然后它的图床是支持七牛云-有拍云-Google相册-Imgur，发现Imgur被屏蔽了，然后Google相册关闭图床功能了，然后七牛云要域名备案。。。一番测试，又滚回GitHub当图床了，发现没被墙能行。
 
-知乎的文档上传功能中，markdown文件中的图片链接来自imgur.com的时候，显示上传图片失败。。。知乎能穿越一下么。。。或者能支持导入本地图片链接。
+知乎的文档上传功能中，markdown文件中的图片链接来自imgur.com的时候，显示上传图片失败。。。知乎能穿越一下么。。。或者能支持导入本地图片链接。然后，知乎导入图片很容易就成这样了。。。
 
     << "/Users/hypergroups/Nutstore/Wolfram \Mathematica/DeployProjects/MyMarkDown/MyMarkDown.wl"
 
