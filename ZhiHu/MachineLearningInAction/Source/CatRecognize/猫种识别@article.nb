@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   2240740,      36966]
-NotebookOptionsPosition[   2234755,      36857]
-NotebookOutlinePosition[   2235399,      36881]
-CellTagsIndexPosition[   2235327,      36876]
+NotebookDataLength[   2240880,      36966]
+NotebookOptionsPosition[   2234894,      36857]
+NotebookOutlinePosition[   2235538,      36881]
+CellTagsIndexPosition[   2235466,      36876]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -36809,15 +36809,15 @@ Google\:76f8\:518c-Imgur\:ff0c\:53d1\:73b0Imgur\:88ab\:5c4f\:853d\:4e86\:ff0c\
 
 Cell["\<\
 \:77e5\:4e4e\:7684\:6587\:6863\:4e0a\:4f20\:529f\:80fd\:4e2d\:ff0cmarkdown\
-\:6587\:4ef6\:4e2d\:7684\:56fe\:7247\:94fe\:63a5\:662fhttps://i.imgur.com/\
-3jnRBiT.jpg\:7684\:65f6\:5019\:ff0c\:663e\:793a\:4e0a\:4f20\:56fe\:7247\:5931\
-\:8d25\:3002\:3002\:3002\:77e5\:4e4e\:80fd\:7a7f\:8d8a\:4e00\:4e0b\:4e48\:3002\
-\:3002\:3002\:6216\:8005\:80fd\:652f\:6301\:5bfc\:5165\:672c\:5730\:56fe\:7247\
-\:94fe\:63a5\:3002\
+\:6587\:4ef6\:4e2d\:7684\:56fe\:7247\:94fe\:63a5\:6765\:81eaimgur.com\:7684\
+\:65f6\:5019\:ff0c\:663e\:793a\:4e0a\:4f20\:56fe\:7247\:5931\:8d25\:3002\:3002\
+\:3002\:77e5\:4e4e\:80fd\:7a7f\:8d8a\:4e00\:4e0b\:4e48\:3002\:3002\:3002\:6216\
+\:8005\:80fd\:652f\:6301\:5bfc\:5165\:672c\:5730\:56fe\:7247\:94fe\:63a5\:3002\
 \>", "Text",
  CellChangeTimes->{{3.766048278968519*^9, 3.766048304090454*^9}, {
-  3.7660483502250443`*^9, 
-  3.766048509284971*^9}},ExpressionUUID->"75a212e1-6316-40c9-b87d-\
+  3.7660483502250443`*^9, 3.766048509284971*^9}, {3.766049649201961*^9, 
+  3.7660496509289417`*^9}, {3.766049761343169*^9, 
+  3.766049769950836*^9}},ExpressionUUID->"75a212e1-6316-40c9-b87d-\
 9ba3ca740e29"],
 
 Cell[BoxData[
@@ -36825,7 +36825,7 @@ Cell[BoxData[
   "\"\</Users/hypergroups/Nutstore/Wolfram \
 Mathematica/DeployProjects/MyMarkDown/MyMarkDown.wl\>\""}]], "Input",
  CellChangeTimes->{{3.76577249931575*^9, 3.7657725260900173`*^9}},
- CellLabel->"In[27]:=",ExpressionUUID->"d5d162a1-e911-4b48-9d3f-ee7407e7a7cf"],
+ CellLabel->"In[38]:=",ExpressionUUID->"d5d162a1-e911-4b48-9d3f-ee7407e7a7cf"],
 
 Cell[BoxData[
  RowBox[{"Notebook2Markdown", "[", 
@@ -36837,7 +36837,7 @@ Cell[BoxData[
    RowBox[{
    "ImagePrefix", "\[Rule]", 
     "\"\<https://raw.githubusercontent.com/HyperGroups/Mathematica/master/\
-ZhiHu/MachineLearningInAction/Source/\>\""}]}], "]"}]], "Input",
+ZhiHu/MachineLearningInAction/Source/CatRecognize\>\""}]}], "]"}]], "Input",
  CellChangeTimes->{{3.7657727367679777`*^9, 3.7657727439927998`*^9}, {
    3.765791282702382*^9, 3.7657912950262833`*^9}, {3.765791510415842*^9, 
    3.7657915125571213`*^9}, {3.7657919788981857`*^9, 
@@ -36849,8 +36849,8 @@ ZhiHu/MachineLearningInAction/Source/\>\""}]}], "]"}]], "Input",
    3.7660438322695713`*^9}, {3.7660444297804117`*^9, 3.766044430529307*^9}, {
    3.76604472527283*^9, 3.766044742789674*^9}, 3.766044792478668*^9, {
    3.76604781712471*^9, 3.766047832739284*^9}, 3.7660485796838284`*^9, 
-   3.766049224386635*^9},
- CellLabel->"In[28]:=",ExpressionUUID->"34ef1538-a32a-449e-9faf-6f9a137abbbc"]
+   3.766049224386635*^9, {3.7660494871355047`*^9, 3.766049489647204*^9}},
+ CellLabel->"In[39]:=",ExpressionUUID->"34ef1538-a32a-449e-9faf-6f9a137abbbc"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
@@ -36875,7 +36875,7 @@ CellTagsIndex->{
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Image", 2235058, 36868}
+ {"Image", 2235197, 36868}
  }
 *)
 (*NotebookFileOutline
@@ -36962,9 +36962,9 @@ Cell[CellGroupData[{
 Cell[2230320, 36769, 280, 5, 81, "Subsection",ExpressionUUID->"c67fd164-5420-4a59-bbd1-206d5d93829e"],
 Cell[2230603, 36776, 1132, 17, 122, "Text",ExpressionUUID->"a5eeb093-296d-40e9-aab5-b2b5e2b0b157"],
 Cell[2231738, 36795, 710, 12, 88, "Text",ExpressionUUID->"12414033-eb30-4809-a5e3-80c9f50c2b8e"],
-Cell[2232451, 36809, 610, 11, 88, "Text",ExpressionUUID->"75a212e1-6316-40c9-b87d-9ba3ca740e29"],
-Cell[2233064, 36822, 290, 5, 46, "Input",ExpressionUUID->"d5d162a1-e911-4b48-9d3f-ee7407e7a7cf"],
-Cell[2233357, 36829, 1358, 23, 78, "Input",ExpressionUUID->"34ef1538-a32a-449e-9faf-6f9a137abbbc"]
+Cell[2232451, 36809, 689, 11, 88, "Text",ExpressionUUID->"75a212e1-6316-40c9-b87d-9ba3ca740e29"],
+Cell[2233143, 36822, 290, 5, 46, "Input",ExpressionUUID->"d5d162a1-e911-4b48-9d3f-ee7407e7a7cf"],
+Cell[2233436, 36829, 1418, 23, 109, "Input",ExpressionUUID->"34ef1538-a32a-449e-9faf-6f9a137abbbc"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]

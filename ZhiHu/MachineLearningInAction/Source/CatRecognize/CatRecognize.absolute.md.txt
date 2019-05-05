@@ -118,8 +118,8 @@ CPU其实在预测的时候已经够快了，我在回家的车上将本文测�
 
 我之前使用的MWeb写作，然后它的图床是支持七牛云-有拍云-Google相册-Imgur，发现Imgur被屏蔽了，然后Google相册关闭图床功能了，然后七牛云要域名备案。。。一翻测试，又滚回GitHub当图床了，发现能行。
 
-知乎的文档上传功能中，markdown文件中的图片链接是https://i.imgur.com/3jnRBiT.jpg的时候，显示上传图片失败。。。知乎能穿越一下么。。。或者能支持导入本地图片链接。
+知乎的文档上传功能中，markdown文件中的图片链接来自imgur.com的时候，显示上传图片失败。。。知乎能穿越一下么。。。或者能支持导入本地图片链接。
 
     << "/Users/hypergroups/Nutstore/Wolfram \Mathematica/DeployProjects/MyMarkDown/MyMarkDown.wl"
 
-    Notebook2Markdown[EvaluationNotebook[],  "dirOutput" -> NotebookDirectory[], "title" -> "CatRecognize",  ImagePrefix -> "https://raw.githubusercontent.com/HyperGroups/Mathematica/master/\ZhiHu/MachineLearningInAction/Source/"]
+    Notebook2Markdown[EvaluationNotebook[],  "dirOutput" -> NotebookDirectory[], "title" -> "CatRecognize",  ImagePrefix -> "https://raw.githubusercontent.com/HyperGroups/Mathematica/master/\ZhiHu/MachineLearningInAction/Source/CatRecognize"]

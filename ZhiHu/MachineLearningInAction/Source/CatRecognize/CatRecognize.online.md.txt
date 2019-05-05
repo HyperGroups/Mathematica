@@ -25,22 +25,22 @@
 
 首先，查看GIF，选择一张图片，截图试一下@@
 
-![OutputCell](https://raw.githubusercontent.com/HyperGroups/Mathematica/master/ZhiHu/MachineLearningInAction/Source/CatRecognize/resource/CatRecognize_11.jpg)
+![OutputCell](https://raw.githubusercontent.com/HyperGroups/Mathematica/master/ZhiHu/MachineLearningInAction/Source/CatRecognize/CatRecognize/resource/CatRecognize_11.jpg)
 
     net = NetModel["Wolfram ImageIdentify Net V1"];
     
 
     net@img
 
-![OutputCell](https://raw.githubusercontent.com/HyperGroups/Mathematica/master/ZhiHu/MachineLearningInAction/Source/CatRecognize/resource/CatRecognize_14.jpg)
+![OutputCell](https://raw.githubusercontent.com/HyperGroups/Mathematica/master/ZhiHu/MachineLearningInAction/Source/CatRecognize/CatRecognize/resource/CatRecognize_14.jpg)
 
     net[img, "TopProbabilities"]
 
-![OutputCell](https://raw.githubusercontent.com/HyperGroups/Mathematica/master/ZhiHu/MachineLearningInAction/Source/CatRecognize/resource/CatRecognize_16.jpg)
+![OutputCell](https://raw.githubusercontent.com/HyperGroups/Mathematica/master/ZhiHu/MachineLearningInAction/Source/CatRecognize/CatRecognize/resource/CatRecognize_16.jpg)
 
     ImageIdentify[img]
 
-![OutputCell](https://raw.githubusercontent.com/HyperGroups/Mathematica/master/ZhiHu/MachineLearningInAction/Source/CatRecognize/resource/CatRecognize_18.jpg)
+![OutputCell](https://raw.githubusercontent.com/HyperGroups/Mathematica/master/ZhiHu/MachineLearningInAction/Source/CatRecognize/CatRecognize/resource/CatRecognize_18.jpg)
 
 所以这是一只北极熊，，，这是一只狗。。。反正各种悲剧。。。
 
@@ -55,7 +55,7 @@ Wolfram Mathematica非常方便用于GIF处理+图像处理生成表情包等玩
     gList = Import@"cat.gif";
     Rasterize@gList
 
-![OutputCell](https://raw.githubusercontent.com/HyperGroups/Mathematica/master/ZhiHu/MachineLearningInAction/Source/CatRecognize/resource/CatRecognize_24.jpg)
+![OutputCell](https://raw.githubusercontent.com/HyperGroups/Mathematica/master/ZhiHu/MachineLearningInAction/Source/CatRecognize/CatRecognize/resource/CatRecognize_24.jpg)
 
 导入GIF后就可以方便地挑选一张图片，然后Crop一下，去使用。
 
@@ -71,7 +71,7 @@ Wolfram Mathematica非常方便用于GIF处理+图像处理生成表情包等玩
     assoMerge = Merge[imgsAsso, Identity];
     assoMerge // Keys
 
-![OutputCell](https://raw.githubusercontent.com/HyperGroups/Mathematica/master/ZhiHu/MachineLearningInAction/Source/CatRecognize/resource/CatRecognize_30.jpg)
+![OutputCell](https://raw.githubusercontent.com/HyperGroups/Mathematica/master/ZhiHu/MachineLearningInAction/Source/CatRecognize/CatRecognize/resource/CatRecognize_30.jpg)
 
 ###类别映射
 
@@ -79,7 +79,7 @@ Wolfram Mathematica非常方便用于GIF处理+图像处理生成表情包等玩
 因为...
 某个Entity[Key]下可能有你想要的东西，可以合并起来传入KeyTake
 
-![OutputCell](https://raw.githubusercontent.com/HyperGroups/Mathematica/master/ZhiHu/MachineLearningInAction/Source/CatRecognize/resource/CatRecognize_33.jpg)
+![OutputCell](https://raw.githubusercontent.com/HyperGroups/Mathematica/master/ZhiHu/MachineLearningInAction/Source/CatRecognize/CatRecognize/resource/CatRecognize_33.jpg)
 
 #批量识别
 ---
@@ -96,7 +96,7 @@ Wolfram Mathematica非常方便用于GIF处理+图像处理生成表情包等玩
     res2Show = AssociationThread[imgsCat -> result];
     ReverseSort[result // Counts]
 
-![OutputCell](https://raw.githubusercontent.com/HyperGroups/Mathematica/master/ZhiHu/MachineLearningInAction/Source/CatRecognize/resource/CatRecognize_39.jpg)
+![OutputCell](https://raw.githubusercontent.com/HyperGroups/Mathematica/master/ZhiHu/MachineLearningInAction/Source/CatRecognize/CatRecognize/resource/CatRecognize_39.jpg)
 
 ###哼，肥波斯的概率比较大。
 
@@ -118,8 +118,8 @@ CPU其实在预测的时候已经够快了，我在回家的车上将本文测�
 
 我之前使用的MWeb写作，然后它的图床是支持七牛云-有拍云-Google相册-Imgur，发现Imgur被屏蔽了，然后Google相册关闭图床功能了，然后七牛云要域名备案。。。一翻测试，又滚回GitHub当图床了，发现能行。
 
-知乎的文档上传功能中，markdown文件中的图片链接是https://i.imgur.com/3jnRBiT.jpg的时候，显示上传图片失败。。。知乎能穿越一下么。。。或者能支持导入本地图片链接。
+知乎的文档上传功能中，markdown文件中的图片链接来自imgur.com的时候，显示上传图片失败。。。知乎能穿越一下么。。。或者能支持导入本地图片链接。
 
     << "/Users/hypergroups/Nutstore/Wolfram \Mathematica/DeployProjects/MyMarkDown/MyMarkDown.wl"
 
-    Notebook2Markdown[EvaluationNotebook[],  "dirOutput" -> NotebookDirectory[], "title" -> "CatRecognize",  ImagePrefix -> "https://raw.githubusercontent.com/HyperGroups/Mathematica/master/\ZhiHu/MachineLearningInAction/Source/"]
+    Notebook2Markdown[EvaluationNotebook[],  "dirOutput" -> NotebookDirectory[], "title" -> "CatRecognize",  ImagePrefix -> "https://raw.githubusercontent.com/HyperGroups/Mathematica/master/\ZhiHu/MachineLearningInAction/Source/CatRecognize"]
