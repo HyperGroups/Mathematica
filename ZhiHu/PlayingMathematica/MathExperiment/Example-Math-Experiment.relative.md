@@ -135,8 +135,4 @@ $$\lim_{n\to \infty } \frac{1}{n}\left(x_1+x_2+\cdots +x_n\right)=\lim_{n\to \in
 CellExpression2PlainText[StyleBox2MD[Cell[Stolz定理, FontWeight -> Bold]]]~~：对数列 $\left\{x_n\right\}$与$\left\{y_n\right\}$,若 $y_1<y_2<\cdots <y_n<\cdots ,$且 $\lim_{n\to \infty } y_n=+\infty$, 又极限
                                                                           $\lim_{n\to +\infty } \frac{x_{n+1}-x_n}{y_{n+1}-y_n}=l$(可为$\pm \infty$),则$\lim_{n\to +\infty } \frac{x_0}{y_0}=l$.
 
-    Notebook2Markdown[EvaluationNotebook[],  "dirOutput" -> NotebookDirectory[],  "title" -> "Example-Math-Experiment",  ImagePrefix -> "https://raw.githubusercontent.com/HyperGroups/Mathematica/master/\ZhiHu/PlayingMathematica/MathExpriment/Example-Math-Experiment"]
-
-![OutputCell](Example-Math-Experiment/resource/Example-Math-Experiment_42.jpg)
-
-$Aborted
+    Notebook2Markdown[EvaluationNotebook[],  "dirOutput" -> NotebookDirectory[],  "title" -> "Example-Math-Experiment",  ImagePrefix -> "https://raw.githubusercontent.com/HyperGroups/Mathematica/master/\ZhiHu/PlayingMathematica/MathExperiment"]

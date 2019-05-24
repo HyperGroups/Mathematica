@@ -7,7 +7,7 @@
     t = N[Table[n^(1/n), {n, 1, 100}]];
      ListPlot[t,  PlotStyle -> PointSize[.0095]]
 
-![OutputCell](/Users/hypergroups/Documents/githubhg/Mathematica/ZhiHu/PlayingMathematica/MathExpriment/Example-Math-Experiment/resource/Example-Math-Experiment_4.jpg)
+![OutputCell](https://raw.githubusercontent.com/HyperGroups/Mathematica/master/ZhiHu/PlayingMathematica/MathExperiment/Example-Math-Experiment/resource/Example-Math-Experiment_4.jpg)
 
     m = 2;
      xn = 0;
@@ -80,7 +80,7 @@ i =  1.0069257256035968317
     GraphicsRow@{ListPlot[fab20, PlotStyle -> PointSize[.02]],lnfab20 = Log[fab20];
      ListPlot[lnfab20, PlotStyle -> PointSize[.02]]}
 
-![OutputCell](/Users/hypergroups/Documents/githubhg/Mathematica/ZhiHu/PlayingMathematica/MathExpriment/Example-Math-Experiment/resource/Example-Math-Experiment_26.jpg)
+![OutputCell](https://raw.githubusercontent.com/HyperGroups/Mathematica/master/ZhiHu/PlayingMathematica/MathExperiment/Example-Math-Experiment/resource/Example-Math-Experiment_26.jpg)
 
 # 实验3
 ---
@@ -96,7 +96,7 @@ i =  1.0069257256035968317
 
     Grid@Partition[p, 5, 5, 1, ""]
 
-![OutputCell](/Users/hypergroups/Documents/githubhg/Mathematica/ZhiHu/PlayingMathematica/MathExpriment/Example-Math-Experiment/resource/Example-Math-Experiment_31.jpg)
+![OutputCell](https://raw.githubusercontent.com/HyperGroups/Mathematica/master/ZhiHu/PlayingMathematica/MathExperiment/Example-Math-Experiment/resource/Example-Math-Experiment_31.jpg)
 
 # 实验4
 ---
@@ -135,8 +135,4 @@ $$\lim_{n\to \infty } \frac{1}{n}\left(x_1+x_2+\cdots +x_n\right)=\lim_{n\to \in
 CellExpression2PlainText[StyleBox2MD[Cell[Stolz定理, FontWeight -> Bold]]]~~：对数列 $\left\{x_n\right\}$与$\left\{y_n\right\}$,若 $y_1<y_2<\cdots <y_n<\cdots ,$且 $\lim_{n\to \infty } y_n=+\infty$, 又极限
                                                                           $\lim_{n\to +\infty } \frac{x_{n+1}-x_n}{y_{n+1}-y_n}=l$(可为$\pm \infty$),则$\lim_{n\to +\infty } \frac{x_0}{y_0}=l$.
 
-    Notebook2Markdown[EvaluationNotebook[],  "dirOutput" -> NotebookDirectory[],  "title" -> "Example-Math-Experiment",  ImagePrefix -> "https://raw.githubusercontent.com/HyperGroups/Mathematica/master/\ZhiHu/PlayingMathematica/MathExpriment/Example-Math-Experiment"]
-
-![OutputCell](/Users/hypergroups/Documents/githubhg/Mathematica/ZhiHu/PlayingMathematica/MathExpriment/Example-Math-Experiment/resource/Example-Math-Experiment_42.jpg)
-
-$Aborted
+    Notebook2Markdown[EvaluationNotebook[],  "dirOutput" -> NotebookDirectory[],  "title" -> "Example-Math-Experiment",  ImagePrefix -> "https://raw.githubusercontent.com/HyperGroups/Mathematica/master/\ZhiHu/PlayingMathematica/MathExperiment"]
