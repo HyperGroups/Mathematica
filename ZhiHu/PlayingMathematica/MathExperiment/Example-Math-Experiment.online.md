@@ -1,3 +1,7 @@
+# 数学实验-极限
+---
+
+
 # 实验1
 ---
 
@@ -7,7 +11,7 @@
     t = N[Table[n^(1/n), {n, 1, 100}]];
      ListPlot[t,  PlotStyle -> PointSize[.0095]]
 
-![OutputCell](https://raw.githubusercontent.com/HyperGroups/Mathematica/master/ZhiHu/PlayingMathematica/MathExperiment/Example-Math-Experiment/resource/Example-Math-Experiment_4.jpg)
+![OutputCell](https://raw.githubusercontent.com/HyperGroups/Mathematica/master/ZhiHu/PlayingMathematica/MathExperiment/Example-Math-Experiment/resource/Example-Math-Experiment_5.jpg)
 
     m = 2;
      xn = 0;
@@ -27,9 +31,9 @@ i =  1.0069257256035968317
      an = Sqrt[3];
     While[Abs[A - an] >= 10^(-m), n++;
      an = N[n^(1/n)]];
-    Print["n= ", n, "an= ", an, "\[LeftBracketingBar]A-an\\[RightBracketingBar]= ", Abs[A - an]]
+    Print["n= ", n, "an= ", an, "|A-an|= ", Abs[A - an]]
 
-   n= 651   an= 1.01    \[LeftBracketingBar]A-an\[RightBracketingBar]= 1.30983*10^-6
+   n= 651   an= 1.01    |A-an|= 1.30983*10^-6
 
 # 实验2 Fibnoacci
 ---
@@ -80,7 +84,7 @@ i =  1.0069257256035968317
     GraphicsRow@{ListPlot[fab20, PlotStyle -> PointSize[.02]],lnfab20 = Log[fab20];
      ListPlot[lnfab20, PlotStyle -> PointSize[.02]]}
 
-![OutputCell](https://raw.githubusercontent.com/HyperGroups/Mathematica/master/ZhiHu/PlayingMathematica/MathExperiment/Example-Math-Experiment/resource/Example-Math-Experiment_26.jpg)
+![OutputCell](https://raw.githubusercontent.com/HyperGroups/Mathematica/master/ZhiHu/PlayingMathematica/MathExperiment/Example-Math-Experiment/resource/Example-Math-Experiment_27.jpg)
 
 # 实验3
 ---
@@ -96,7 +100,7 @@ i =  1.0069257256035968317
 
     Grid@Partition[p, 5, 5, 1, ""]
 
-![OutputCell](https://raw.githubusercontent.com/HyperGroups/Mathematica/master/ZhiHu/PlayingMathematica/MathExperiment/Example-Math-Experiment/resource/Example-Math-Experiment_31.jpg)
+![OutputCell](https://raw.githubusercontent.com/HyperGroups/Mathematica/master/ZhiHu/PlayingMathematica/MathExperiment/Example-Math-Experiment/resource/Example-Math-Experiment_32.jpg)
 
 # 实验4
 ---
@@ -132,7 +136,14 @@ $$\lim_{n\to \infty } \frac{1}{n}\left(x_1+x_2+\cdots +x_n\right)=\lim_{n\to \in
 
 只要$a_n$的极限存在，(2)式总是成立，这是Stolz定理的一个特例
 
-CellExpression2PlainText[StyleBox2MD[Cell[Stolz定理, FontWeight -> Bold]]]~~：对数列 $\left\{x_n\right\}$与$\left\{y_n\right\}$,若 $y_1<y_2<\cdots <y_n<\cdots ,$且 $\lim_{n\to \infty } y_n=+\infty$, 又极限
-                                                                          $\lim_{n\to +\infty } \frac{x_{n+1}-x_n}{y_{n+1}-y_n}=l$(可为$\pm \infty$),则$\lim_{n\to +\infty } \frac{x_0}{y_0}=l$.
+### <>StringExpression[CellExpression2PlainText[StyleBox2MD[Cell[Stolz定理, FontWeight -> Bold]]]]<>
+
+
+对数列 $\left\{x_n\right\}$与$\left\{y_n\right\}$,若 $y_1<y_2<\cdots <y_n<\cdots ,$且 $\lim_{n\to \infty } y_n=+\infty$, 又极限
+$\lim_{n\to +\infty } \frac{x_{n+1}-x_n}{y_{n+1}-y_n}=l$(可为$\pm \infty$),则$\lim_{n\to +\infty } \frac{x_0}{y_0}=l$.
+
+# 
+---
+
 
     Notebook2Markdown[EvaluationNotebook[],  "dirOutput" -> NotebookDirectory[],  "title" -> "Example-Math-Experiment",  ImagePrefix -> "https://raw.githubusercontent.com/HyperGroups/Mathematica/master/\ZhiHu/PlayingMathematica/MathExperiment"]
