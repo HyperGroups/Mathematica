@@ -136,7 +136,7 @@ $$\lim_{n\to \infty } \frac{1}{n}\left(x_1+x_2+\cdots +x_n\right)=\lim_{n\to \in
 
 只要$a_n$的极限存在，(2)式总是成立，这是Stolz定理的一个特例
 
-### <>StringExpression[CellExpression2PlainText[StyleBox2MD[Cell[Stolz定理, FontWeight -> Bold]]]]<>
+### Stolz定理
 
 
 对数列 $\left\{x_n\right\}$与$\left\{y_n\right\}$,若 $y_1<y_2<\cdots <y_n<\cdots ,$且 $\lim_{n\to \infty } y_n=+\infty$, 又极限
