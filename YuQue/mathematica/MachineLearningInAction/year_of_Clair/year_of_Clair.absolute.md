@@ -61,4 +61,4 @@ Is it a bug of the model? If we maximize the pdf function, we can get 7.
 
     << "/Users/hypergroups/Nutstore/Wolfram \Mathematica/DeployProjects/MyMarkDown/MyMarkDown.wl"
 
-    Notebook2Markdown[EvaluationNotebook[],  "dirOutput" -> NotebookDirectory[], "title" -> "year_of_Clair",  ImagePrefix -> "https://raw.githubusercontent.com/HyperGroups/Mathematica/master/\YuQue/MachineLearningInAction/Source/year_of_Clair"]
+    Notebook2Markdown[EvaluationNotebook[],  "dirOutput" -> NotebookDirectory[], "title" -> "year_of_Clair",  ImagePrefix -> "https://raw.githubusercontent.com/HyperGroups/Mathematica/master/\YuQue/MachineLearningInAction/year_of_Clair"]
