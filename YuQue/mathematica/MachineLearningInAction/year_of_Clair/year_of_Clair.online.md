@@ -8,7 +8,7 @@
 
     distribution = Predict["NameAge", "Claire", "Distribution"]
 
-![OutputCell](https://raw.githubusercontent.com/HyperGroups/Mathematica/master/YuQue/MachineLearningInAction/year_of_Clair/year_of_Clair/resource/year_of_Clair_5.jpg)
+![OutputCell](https://raw.githubusercontent.com/HyperGroups/Mathematica/master/YuQue/mathematica/MachineLearningInAction/year_of_Clair/year_of_Clair/resource/year_of_Clair_5.jpg)
 
     dataRaw = distribution[[2]]
 
@@ -32,7 +32,7 @@ If we pad data in the Left, we can do like the following, we can ListPlot the da
 
     ListPlot@data
 
-![OutputCell](https://raw.githubusercontent.com/HyperGroups/Mathematica/master/YuQue/MachineLearningInAction/year_of_Clair/year_of_Clair/resource/year_of_Clair_17.jpg)
+![OutputCell](https://raw.githubusercontent.com/HyperGroups/Mathematica/master/YuQue/mathematica/MachineLearningInAction/year_of_Clair/year_of_Clair/resource/year_of_Clair_17.jpg)
 
 If we use PDF to extract data, we can see there is a zero in the end of list.
 
@@ -61,4 +61,4 @@ Is it a bug of the model? If we maximize the pdf function, we can get 7.
 
     << "/Users/hypergroups/Nutstore/Wolfram \Mathematica/DeployProjects/MyMarkDown/MyMarkDown.wl"
 
-    Notebook2Markdown[EvaluationNotebook[],  "dirOutput" -> NotebookDirectory[], "title" -> "year_of_Clair",  ImagePrefix -> "https://raw.githubusercontent.com/HyperGroups/Mathematica/master/\YuQue/MachineLearningInAction/year_of_Clair"]
+    Notebook2Markdown[EvaluationNotebook[],  "dirOutput" -> NotebookDirectory[], "title" -> "year_of_Clair",  ImagePrefix -> "https://raw.githubusercontent.com/HyperGroups/Mathematica/master/\YuQue/mathematica/MachineLearningInAction/year_of_Clair"]
