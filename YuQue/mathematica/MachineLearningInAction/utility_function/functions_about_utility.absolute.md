@@ -19,11 +19,7 @@ A utility function {\displaystyle u\colon X\to \mathbb {R} }  u\colon X\to \R re
 ### 例题
 
 
-    f[x1_, x2_] := x1*x2^4
-
-    Plot[f[0.5, x2], {x2, 0, 10}]
-
-![OutputCell](/Users/hypergroups/Documents/githubhg/Mathematica/YuQue/mathematica/MachineLearningInAction/utility_function/functions_about_utility/resource/functions_about_utility_10.jpg)
+...
 
 # 边际效用递减
 ---
@@ -55,11 +51,11 @@ A utility function {\displaystyle u\colon X\to \mathbb {R} }  u\colon X\to \R re
 
     ListPlot[list = List @@@ trainingset, Joined -> True]
 
-![OutputCell](/Users/hypergroups/Documents/githubhg/Mathematica/YuQue/mathematica/MachineLearningInAction/utility_function/functions_about_utility/resource/functions_about_utility_22.jpg)
+![OutputCell](/Users/hypergroups/Documents/githubhg/Mathematica/YuQue/mathematica/MachineLearningInAction/utility_function/functions_about_utility/resource/functions_about_utility_20.jpg)
 
     p = Predict[trainingset]
 
-![OutputCell](/Users/hypergroups/Documents/githubhg/Mathematica/YuQue/mathematica/MachineLearningInAction/utility_function/functions_about_utility/resource/functions_about_utility_24.jpg)
+![OutputCell](/Users/hypergroups/Documents/githubhg/Mathematica/YuQue/mathematica/MachineLearningInAction/utility_function/functions_about_utility/resource/functions_about_utility_22.jpg)
 
 Visualize the probability density for a given example:
 
@@ -70,7 +66,7 @@ Function[\[FormalX],1.42582 E^(-6.38678 (-7.57598+\[FormalX])^2)]
 
     Plot[pdf[x], {x, 5, 10}, PlotRange -> All]
 
-![OutputCell](/Users/hypergroups/Documents/githubhg/Mathematica/YuQue/mathematica/MachineLearningInAction/utility_function/functions_about_utility/resource/functions_about_utility_29.jpg)
+![OutputCell](/Users/hypergroups/Documents/githubhg/Mathematica/YuQue/mathematica/MachineLearningInAction/utility_function/functions_about_utility/resource/functions_about_utility_27.jpg)
 
     utility[a_, p_] := -Piecewise[{{Exp[p - a], a < p}, {Exp[2*(a - p)], a >= p}}]
 
@@ -86,7 +82,7 @@ E^(-3 x)	0>=x
 
     Plot[f, {x, -1, 2}]
 
-![OutputCell](/Users/hypergroups/Documents/githubhg/Mathematica/YuQue/mathematica/MachineLearningInAction/utility_function/functions_about_utility/resource/functions_about_utility_35.jpg)
+![OutputCell](/Users/hypergroups/Documents/githubhg/Mathematica/YuQue/mathematica/MachineLearningInAction/utility_function/functions_about_utility/resource/functions_about_utility_33.jpg)
 
 效用函数：假如用户对于修正值的偏好是100%，
 
