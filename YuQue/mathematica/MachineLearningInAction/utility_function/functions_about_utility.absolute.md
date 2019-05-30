@@ -62,7 +62,7 @@ Visualize the probability density for a given example:
     example = 4;
     pdf = PDF[p[example, "Distribution"]]
 
-Function[\[FormalX],1.42582 E^(-6.38678 (-7.57598+\[FormalX])^2)]
+![OutputCell](/Users/hypergroups/Documents/githubhg/Mathematica/YuQue/mathematica/MachineLearningInAction/utility_function/functions_about_utility/resource/functions_about_utility_25.jpg)
 
     Plot[pdf[x], {x, 5, 10}, PlotRange -> All]
 
@@ -74,11 +74,7 @@ Use this utility to predict the example:
 
     f = utility[0, x]
 
--(\[Piecewise]	E^x	0<x
-E^(-3 x)	0>=x
-0	True
-
-)
+![OutputCell](/Users/hypergroups/Documents/githubhg/Mathematica/YuQue/mathematica/MachineLearningInAction/utility_function/functions_about_utility/resource/functions_about_utility_31.jpg)
 
     Plot[f, {x, -1, 2}]
 
