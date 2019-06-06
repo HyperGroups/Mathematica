@@ -1,0 +1,212 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      7304,        204]
+NotebookOptionsPosition[      5598,        166]
+NotebookOutlinePosition[      5934,        181]
+CellTagsIndexPosition[      5891,        178]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["\:9006\:6c34\:5bd2\:52a8\:753b\:7f16\:8f91\:5668\:9759\:6001\:7fa4\:7ec4\
+\:751f\:6210", "Title",
+ CellChangeTimes->{{3.7688307732552605`*^9, 
+  3.7688307804078307`*^9}},ExpressionUUID->"f8d98b5c-161a-4124-888b-\
+335a465f9192"],
+
+Cell[BoxData[
+ RowBox[{"<<", 
+  "\"\</Users/hypergroups/Documents/githubhg/MathematicaMovieEditor/\
+JusticeMovieEditor/Packages/JusticeEditorV001.wl\>\""}]], "Input",
+ CellChangeTimes->{{3.768833961065271*^9, 3.768833964309456*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"c92ff3f5-fbda-4bd3-854e-bbd467de6fb6"],
+
+Cell[CellGroupData[{
+
+Cell["Mathematica", "Section",
+ CellChangeTimes->{{3.7688321653040667`*^9, 
+  3.768832166362264*^9}},ExpressionUUID->"ebf185a3-d383-4f43-a10d-\
+dcbf88f4b11f"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"pts", "=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"Append", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"N", "@", "1000"}], "#"}], ",", "0"}], "]"}], "&"}], "/@", 
+    RowBox[{"CirclePoints", "[", "100", "]"}]}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.7688322593240414`*^9, 3.7688322945236883`*^9}, {
+  3.7688340473075647`*^9, 3.768834052151331*^9}},
+ CellLabel->"In[6]:=",ExpressionUUID->"573f01a0-aacf-4d73-a241-88e97b68d0fd"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["MovieGen", "Section",
+ CellChangeTimes->{{3.7688321462920403`*^9, 
+  3.7688321565179057`*^9}},ExpressionUUID->"af747ad4-28ed-4517-ac6c-\
+170f4c78b793"],
+
+Cell[CellGroupData[{
+
+Cell["DataTransform", "Subsection",
+ CellChangeTimes->{{3.76883244856168*^9, 
+  3.768832450732933*^9}},ExpressionUUID->"9ce16dcd-555d-4e12-b85a-\
+54f9a23753ab"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"centerEditor", "=", 
+   RowBox[{"{", 
+    RowBox[{"68909.86", ",", "1453.97", ",", "53776.79"}], "}"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.7688324818818283`*^9, 3.768832508772081*^9}},
+ CellLabel->"In[7]:=",ExpressionUUID->"8ef6d43f-0048-40d5-9d3c-4a0ce6503614"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"ptsEditor", "=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"centerEditor", "+", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"#", "[", 
+         RowBox[{"[", "1", "]"}], "]"}], ",", 
+        RowBox[{"#", "[", 
+         RowBox[{"[", "3", "]"}], "]"}], ",", 
+        RowBox[{"#", "[", 
+         RowBox[{"[", "2", "]"}], "]"}]}], "}"}]}], "&"}], "/@", "pts"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.76883245226935*^9, 3.7688324772521276`*^9}, {
+  3.7688325118209906`*^9, 3.768832514048581*^9}, {3.7688340685396147`*^9, 
+  3.768834071372188*^9}},
+ CellLabel->"In[13]:=",ExpressionUUID->"55a240f0-fd56-4f6a-ad3d-3d8acc3b456a"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"element", "[", "Director", "]"}], "=", 
+   RowBox[{"JusticeEditor`elementTemplate", "[", "Director", "]"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.768827991183829*^9, 3.7688279948117094`*^9}, 
+   3.768830491784973*^9, {3.768834060076561*^9, 3.768834073847515*^9}},
+ CellLabel->"In[14]:=",ExpressionUUID->"53da4809-09b7-43e8-accc-7c4d7885b5f9"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["MovieGen&&Export", "Subsection",
+ CellChangeTimes->{{3.7688328403876314`*^9, 
+  3.768832843523322*^9}},ExpressionUUID->"50a99c51-0ee1-48bc-860a-\
+1224e2ff0bc4"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"actors", "=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"EditorActorGen", "[", 
+      RowBox[{"\"\<initPos\>\"", "\[Rule]", "#"}], "]"}], "&"}], "/@", 
+    "ptsEditor"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.7688279238738728`*^9, 3.768827924762021*^9}, {
+   3.7688279654241347`*^9, 3.7688279665676003`*^9}, 3.7688281602391186`*^9, {
+   3.768829024228377*^9, 3.7688290322381525`*^9}, {3.7688323096021748`*^9, 
+   3.7688323498437724`*^9}, 3.76883255955688*^9},
+ CellLabel->"In[15]:=",ExpressionUUID->"359513c7-2d1f-4825-86b5-fd9665c01e58"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"movie", "=", 
+   RowBox[{"EditorMovieGen", "[", 
+    RowBox[{"{", "actors", "}"}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{
+  3.768825380576024*^9, {3.7688254533910484`*^9, 3.7688255169482403`*^9}, 
+   3.7688304635956907`*^9},
+ CellLabel->"In[16]:=",ExpressionUUID->"2c7627e2-4152-4df4-a0a7-e5d81ff267ae"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"EditorMovieExport", "[", 
+  RowBox[{"\"\<testGroup\>\"", ",", "movie", ",", 
+   RowBox[{"dirOutput", "\[Rule]", 
+    RowBox[{"NotebookDirectory", "[", "]"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7688323681382523`*^9, 3.7688323791381054`*^9}, {
+  3.76883284917682*^9, 3.768832853454978*^9}, {3.7688341224822063`*^9, 
+  3.768834150300405*^9}},
+ CellLabel->"In[22]:=",ExpressionUUID->"dcfa5219-a123-45a3-84ca-2c143d0dac3f"],
+
+Cell[BoxData["\<\"/Users/hypergroups/Documents/githubhg/\
+MathematicaMovieEditor/JusticeMovieEditor/Working/Test/testGroup.movie\"\>"], \
+"Output",
+ CellChangeTimes->{
+  3.7688323794158845`*^9, {3.7688325200496798`*^9, 3.7688325292567425`*^9}, 
+   3.7688325612743006`*^9, {3.7688340989705057`*^9, 3.768834150698119*^9}},
+ CellLabel->"Out[22]=",ExpressionUUID->"eb91b749-ac3e-4a26-9e3b-3561b6e5a120"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1691, 836},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"12.0 for Mac OS X x86 (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 233, 4, 146, "Title",ExpressionUUID->"f8d98b5c-161a-4124-888b-335a465f9192"],
+Cell[816, 28, 310, 5, 46, "Input",ExpressionUUID->"c92ff3f5-fbda-4bd3-854e-bbd467de6fb6"],
+Cell[CellGroupData[{
+Cell[1151, 37, 158, 3, 101, "Section",ExpressionUUID->"ebf185a3-d383-4f43-a10d-dcbf88f4b11f"],
+Cell[1312, 42, 474, 12, 46, "Input",ExpressionUUID->"573f01a0-aacf-4d73-a241-88e97b68d0fd"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1823, 59, 157, 3, 101, "Section",ExpressionUUID->"af747ad4-28ed-4517-ac6c-170f4c78b793"],
+Cell[CellGroupData[{
+Cell[2005, 66, 160, 3, 81, "Subsection",ExpressionUUID->"9ce16dcd-555d-4e12-b85a-54f9a23753ab"],
+Cell[2168, 71, 306, 7, 46, "Input",ExpressionUUID->"8ef6d43f-0048-40d5-9d3c-4a0ce6503614"],
+Cell[2477, 80, 667, 18, 46, "Input",ExpressionUUID->"55a240f0-fd56-4f6a-ad3d-3d8acc3b456a"],
+Cell[3147, 100, 395, 8, 46, "Input",ExpressionUUID->"53da4809-09b7-43e8-accc-7c4d7885b5f9"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3579, 113, 166, 3, 81, "Subsection",ExpressionUUID->"50a99c51-0ee1-48bc-860a-1224e2ff0bc4"],
+Cell[3748, 118, 573, 12, 46, "Input",ExpressionUUID->"359513c7-2d1f-4825-86b5-fd9665c01e58"],
+Cell[4324, 132, 345, 8, 46, "Input",ExpressionUUID->"2c7627e2-4152-4df4-a0a7-e5d81ff267ae"],
+Cell[CellGroupData[{
+Cell[4694, 144, 450, 8, 46, "Input",ExpressionUUID->"dcfa5219-a123-45a3-84ca-2c143d0dac3f"],
+Cell[5147, 154, 399, 6, 52, "Output",ExpressionUUID->"eb91b749-ac3e-4a26-9e3b-3561b6e5a120"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
