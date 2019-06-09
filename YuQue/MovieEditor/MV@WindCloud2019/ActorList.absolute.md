@@ -75,7 +75,9 @@ Task：捏角色
 
 *****表示5星级，人物优先级最高，有些场景画面可以被简化或被替换。
 
-所有人物的最终生效也可以到动画全部完成后再来一键替换
+所有人物的最终生效也可以到动画全部完成后再来一键替换。
+
+有问题在Topic里讨论，或在文章底下评论。
 
     << "/Users/hypergroups/Nutstore/Wolfram \Mathematica/DeployProjects/MyMarkDown/MyMarkDown.wl"
 
