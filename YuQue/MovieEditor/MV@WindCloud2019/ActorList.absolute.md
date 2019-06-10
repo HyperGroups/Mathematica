@@ -10,19 +10,21 @@
 ---
 
 
-******
+￥￥￥￥￥
 
 # 聂风
 ---
 
 
-******
+￥￥￥￥￥
+
+飘逸的霸刀？？？
 
 # 魔聂风
 ---
 
 
-** *
+￥￥￥
 
 # 无名
 ---
@@ -30,17 +32,23 @@
 
 *****
 
+![OutputCell](/Users/hypergroups/Documents/githubhg/Mathematica/YuQue/MovieEditor/MV@WindCloud2019/ActorList/resource/ActorList_12.jpg)
+
+![OutputCell](/Users/hypergroups/Documents/githubhg/Mathematica/YuQue/MovieEditor/MV@WindCloud2019/ActorList/resource/ActorList_13.jpg)
+
+这个是以前我视频里随便找的叶伟。。。当然，不太符合电影或电视剧里的感觉。
+
 # 绝无神
 ---
 
 
-*****
+￥￥￥￥￥
 
 # 邪皇
 ---
 
 
-***
+￥￥￥
 
 # 群演
 ---
@@ -49,21 +57,21 @@
 ### 场景1
 
 
-***
+￥￥￥
 
 PK被绝无神秒成渣
 
 ### 场景2
 
 
-***
+￥￥￥
 
 步惊云战无名秒杀一群黑衣
 
 ### 场景3
 
 
-***
+￥￥￥
 
 邪皇砍群演
 
@@ -73,7 +81,7 @@ PK被绝无神秒成渣
 
 Task：捏角色
 
-*****表示5星级，人物优先级最高，有些场景画面可以被简化或被替换。
+￥￥￥￥￥表示5星级，人物优先级最高，有些场景画面可以被简化或被替换。
 
 所有人物的最终生效也可以到动画全部完成后再来一键替换。
 
