@@ -16,7 +16,7 @@
 ---
 
 
-
+![OutputCell](ArtOfWord/resource/ArtOfWord_7.jpg)
 
 # Sample@剑
 ---
@@ -82,13 +82,21 @@ Demonstrations里竟然搜索不到了，我上传了一下
 
 [article](https://zhuanlan.zhihu.com/p/68269562)
 
+![OutputCell](ArtOfWord/resource/ArtOfWord_34.jpg)
+
 # Other
 ---
 
 
 其他风格化的汉字
 
-关于这个Topic有哪些Example，欢迎链接发我。
+关于这个Topic有哪些Example，欢迎链接到评论区或发我~~~
+
+# GIF Gallery
+---
+
+
+
 
 # Summary
 ---
@@ -98,6 +106,8 @@ Mathematica里有许多有趣的Demo，但是他们视觉效果太Naive，我们
 当然对Demonstration感兴趣的也可以自己做一些上传。
 
 [projects_page](https://www.yuque.com/animation_projects)
+
+[作品_B站](https://www.bilibili.com/video/av56828439/)
 
     << "/Users/hypergroups/Nutstore/Wolfram \Mathematica/DeployProjects/MyMarkDown/MyMarkDown.wl"
 
