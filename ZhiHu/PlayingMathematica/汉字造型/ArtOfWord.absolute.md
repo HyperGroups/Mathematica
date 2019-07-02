@@ -12,11 +12,13 @@
 
 有了基础的汉字的三维坐标后，我们可以控制点出现的先后顺序，就是一种动画的形态了，参考【倾城之恋From风云\[CenterDot]雄霸天下】。
 
+效果主要分两类，一类是传统的艺术字，二类是通过坐标生成的群组的字效果。
+
 # Sample from Internet
 ---
 
 
-![OutputCell](/Users/hypergroups/Documents/githubhg/Mathematica/ZhiHu/PlayingMathematica/汉字造型/ArtOfWord/resource/ArtOfWord_7.jpg)
+![OutputCell](/Users/hypergroups/Documents/githubhg/Mathematica/ZhiHu/PlayingMathematica/汉字造型/ArtOfWord/resource/ArtOfWord_8.jpg)
 
 有空翻拍一下这个大招的片断。
 
@@ -32,7 +34,7 @@
 
     ListPlot[pos2D]
 
-![OutputCell](/Users/hypergroups/Documents/githubhg/Mathematica/ZhiHu/PlayingMathematica/汉字造型/ArtOfWord/resource/ArtOfWord_13.jpg)
+![OutputCell](/Users/hypergroups/Documents/githubhg/Mathematica/ZhiHu/PlayingMathematica/汉字造型/ArtOfWord/resource/ArtOfWord_14.jpg)
 
 ### 重采样
 
@@ -41,7 +43,7 @@
 
     ListPlot[pos2DCenter = TranslationTransform[{0, 100} - Mean[pos2D] // N]@# & /@ pos2D[[1 ;; -1 ;; 250]]]
 
-![OutputCell](/Users/hypergroups/Documents/githubhg/Mathematica/ZhiHu/PlayingMathematica/汉字造型/ArtOfWord/resource/ArtOfWord_17.jpg)
+![OutputCell](/Users/hypergroups/Documents/githubhg/Mathematica/ZhiHu/PlayingMathematica/汉字造型/ArtOfWord/resource/ArtOfWord_18.jpg)
 
 ### 旋转校正
 
@@ -51,7 +53,11 @@
 
 296
 
-![OutputCell](/Users/hypergroups/Documents/githubhg/Mathematica/ZhiHu/PlayingMathematica/汉字造型/ArtOfWord/resource/ArtOfWord_21.jpg)
+![OutputCell](/Users/hypergroups/Documents/githubhg/Mathematica/ZhiHu/PlayingMathematica/汉字造型/ArtOfWord/resource/ArtOfWord_22.jpg)
+
+上面这个效果的话，可能看不出来是一个字了，但是如果每一个点有特效能放大的话，效果就明显了，这里得调一调，文末有视频效果链接。
+
+![OutputCell](/Users/hypergroups/Documents/githubhg/Mathematica/ZhiHu/PlayingMathematica/汉字造型/ArtOfWord/resource/ArtOfWord_24.jpg)
 
 # Raster3D
 ---
@@ -59,7 +65,7 @@
 
     Graphics3D[{Raster3D[t = {Rasterize[ExpressionCell[Style["Hello", 80, Red], "Output", Background -> None], "Data", Background -> None]}, {{0, 1, 0.4}, {1, 0, 0.6}}, Method -> {"InterpolateValues" -> True}]},  PlotRange -> {0, 1}, ViewPoint -> {-1.54, 0.35, 3},  ViewVertical -> {-0.23, 0.86, 0.46}]
 
-![OutputCell](/Users/hypergroups/Documents/githubhg/Mathematica/ZhiHu/PlayingMathematica/汉字造型/ArtOfWord/resource/ArtOfWord_24.jpg)
+![OutputCell](/Users/hypergroups/Documents/githubhg/Mathematica/ZhiHu/PlayingMathematica/汉字造型/ArtOfWord/resource/ArtOfWord_27.jpg)
 
 # ImageMesh
 ---
@@ -67,15 +73,15 @@
 
 Create 3D-printable objects from 2D images:
 
-![OutputCell](/Users/hypergroups/Documents/githubhg/Mathematica/ZhiHu/PlayingMathematica/汉字造型/ArtOfWord/resource/ArtOfWord_27.jpg)
+![OutputCell](/Users/hypergroups/Documents/githubhg/Mathematica/ZhiHu/PlayingMathematica/汉字造型/ArtOfWord/resource/ArtOfWord_30.jpg)
 
     ImageMesh[ColorNegate[i]]
 
-![OutputCell](/Users/hypergroups/Documents/githubhg/Mathematica/ZhiHu/PlayingMathematica/汉字造型/ArtOfWord/resource/ArtOfWord_29.jpg)
+![OutputCell](/Users/hypergroups/Documents/githubhg/Mathematica/ZhiHu/PlayingMathematica/汉字造型/ArtOfWord/resource/ArtOfWord_32.jpg)
 
     RegionProduct[%, Line[{{0.}, {50.}}]]
 
-![OutputCell](/Users/hypergroups/Documents/githubhg/Mathematica/ZhiHu/PlayingMathematica/汉字造型/ArtOfWord/resource/ArtOfWord_31.jpg)
+![OutputCell](/Users/hypergroups/Documents/githubhg/Mathematica/ZhiHu/PlayingMathematica/汉字造型/ArtOfWord/resource/ArtOfWord_34.jpg)
 
 # Sample@Wall
 ---
@@ -85,9 +91,9 @@ Demonstrations里竟然搜索不到了，我上传了一下
 
 这里[下载](https://github.com/HyperGroups/Mathematica/blob/master/ZhiHu/PlayingMathematica/%E6%B1%89%E5%AD%97%E9%80%A0%E5%9E%8B/bricks.nb)
 
-![OutputCell](/Users/hypergroups/Documents/githubhg/Mathematica/ZhiHu/PlayingMathematica/汉字造型/ArtOfWord/resource/ArtOfWord_35.jpg)
+![OutputCell](/Users/hypergroups/Documents/githubhg/Mathematica/ZhiHu/PlayingMathematica/汉字造型/ArtOfWord/resource/ArtOfWord_38.jpg)
 
-![OutputCell](/Users/hypergroups/Documents/githubhg/Mathematica/ZhiHu/PlayingMathematica/汉字造型/ArtOfWord/resource/ArtOfWord_36.jpg)
+![OutputCell](/Users/hypergroups/Documents/githubhg/Mathematica/ZhiHu/PlayingMathematica/汉字造型/ArtOfWord/resource/ArtOfWord_39.jpg)
 
 # Sample@汉字的透视图重构
 ---
@@ -99,9 +105,9 @@ Demonstrations里竟然搜索不到了，我上传了一下
 
 [article](https://zhuanlan.zhihu.com/p/68269562)
 
-![OutputCell](/Users/hypergroups/Documents/githubhg/Mathematica/ZhiHu/PlayingMathematica/汉字造型/ArtOfWord/resource/ArtOfWord_41.jpg)
+![OutputCell](/Users/hypergroups/Documents/githubhg/Mathematica/ZhiHu/PlayingMathematica/汉字造型/ArtOfWord/resource/ArtOfWord_44.jpg)
 
-![OutputCell](/Users/hypergroups/Documents/githubhg/Mathematica/ZhiHu/PlayingMathematica/汉字造型/ArtOfWord/resource/ArtOfWord_42.jpg)
+![OutputCell](/Users/hypergroups/Documents/githubhg/Mathematica/ZhiHu/PlayingMathematica/汉字造型/ArtOfWord/resource/ArtOfWord_45.jpg)
 
 # Other&&Summary
 ---
@@ -121,8 +127,7 @@ Mathematica里有许多有趣的Demo，但是他们视觉效果太Naive，我们
 
 
 
-### B站作品
-
+B站作品\[LongDash]\[LongDash]圈重点，多多关注多多支持~~~
 
 [作品_B站](https://www.bilibili.com/video/av56828439/)
 
