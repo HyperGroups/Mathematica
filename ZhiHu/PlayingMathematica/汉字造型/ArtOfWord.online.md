@@ -27,18 +27,18 @@
 
     ListPlot[pos2D]
 
-![OutputCell](https://raw.githubusercontent.com/HyperGroups/Mathematica/master/ZhiHu/PlayingMathematica/汉字造型/ArtOfWord/ArtOfWord/resource/ArtOfWord_11.jpg)
+![OutputCell](https://raw.githubusercontent.com/HyperGroups/Mathematica/master/ZhiHu/PlayingMathematica/汉字造型//ArtOfWord/resource/ArtOfWord_11.jpg)
 
     ListPlot[pos2DCenter = TranslationTransform[{0, 100} - Mean[pos2D] // N]@# & /@ pos2D[[1 ;; -1 ;; 250]]]
 
-![OutputCell](https://raw.githubusercontent.com/HyperGroups/Mathematica/master/ZhiHu/PlayingMathematica/汉字造型/ArtOfWord/ArtOfWord/resource/ArtOfWord_13.jpg)
+![OutputCell](https://raw.githubusercontent.com/HyperGroups/Mathematica/master/ZhiHu/PlayingMathematica/汉字造型//ArtOfWord/resource/ArtOfWord_13.jpg)
 
     pos3D = RotationMatrix[-90 Degree, {0, 0, 1}].{28 #[[1]], 28 #[[2]], 0} & /@ pos2DCenter;
     len = pos3D // LengthListPointPlot3D[pos3D, ViewPoint -> Top]
 
 296
 
-![OutputCell](https://raw.githubusercontent.com/HyperGroups/Mathematica/master/ZhiHu/PlayingMathematica/汉字造型/ArtOfWord/ArtOfWord/resource/ArtOfWord_16.jpg)
+![OutputCell](https://raw.githubusercontent.com/HyperGroups/Mathematica/master/ZhiHu/PlayingMathematica/汉字造型//ArtOfWord/resource/ArtOfWord_16.jpg)
 
 # Raster3D
 ---
@@ -54,15 +54,15 @@
 
 Create 3D-printable objects from 2D images:
 
-![OutputCell](https://raw.githubusercontent.com/HyperGroups/Mathematica/master/ZhiHu/PlayingMathematica/汉字造型/ArtOfWord/ArtOfWord/resource/ArtOfWord_22.jpg)
+![OutputCell](https://raw.githubusercontent.com/HyperGroups/Mathematica/master/ZhiHu/PlayingMathematica/汉字造型//ArtOfWord/resource/ArtOfWord_22.jpg)
 
     ImageMesh[ColorNegate[i]]
 
-![OutputCell](https://raw.githubusercontent.com/HyperGroups/Mathematica/master/ZhiHu/PlayingMathematica/汉字造型/ArtOfWord/ArtOfWord/resource/ArtOfWord_24.jpg)
+![OutputCell](https://raw.githubusercontent.com/HyperGroups/Mathematica/master/ZhiHu/PlayingMathematica/汉字造型//ArtOfWord/resource/ArtOfWord_24.jpg)
 
     RegionProduct[%, Line[{{0.}, {50.}}]]
 
-![OutputCell](https://raw.githubusercontent.com/HyperGroups/Mathematica/master/ZhiHu/PlayingMathematica/汉字造型/ArtOfWord/ArtOfWord/resource/ArtOfWord_26.jpg)
+![OutputCell](https://raw.githubusercontent.com/HyperGroups/Mathematica/master/ZhiHu/PlayingMathematica/汉字造型//ArtOfWord/resource/ArtOfWord_26.jpg)
 
 # Sample@Wall
 ---
@@ -72,7 +72,7 @@ Demonstrations里竟然搜索不到了，我上传了一下
 
 这里[下载](https://github.com/HyperGroups/Mathematica/blob/master/ZhiHu/PlayingMathematica/%E6%B1%89%E5%AD%97%E9%80%A0%E5%9E%8B/bricks.nb)
 
-![OutputCell](https://raw.githubusercontent.com/HyperGroups/Mathematica/master/ZhiHu/PlayingMathematica/汉字造型/ArtOfWord/ArtOfWord/resource/ArtOfWord_30.jpg)
+![OutputCell](https://raw.githubusercontent.com/HyperGroups/Mathematica/master/ZhiHu/PlayingMathematica/汉字造型//ArtOfWord/resource/ArtOfWord_30.jpg)
 
 # Sample@汉字的透视图重构
 ---
@@ -101,4 +101,4 @@ Mathematica里有许多有趣的Demo，但是他们视觉效果太Naive，我们
 
     << "/Users/hypergroups/Nutstore/Wolfram \Mathematica/DeployProjects/MyMarkDown/MyMarkDown.wl"
 
-    Notebook2Markdown[EvaluationNotebook[],  "dirOutput" -> NotebookDirectory[], "title" -> "ArtOfWord",  ImagePrefix -> "https://raw.githubusercontent.com/HyperGroups/Mathematica/master/\ZhiHu/PlayingMathematica/汉字造型/ArtOfWord"]
+    Notebook2Markdown[EvaluationNotebook[],  "dirOutput" -> NotebookDirectory[], "title" -> "ArtOfWord",  ImagePrefix -> "https://raw.githubusercontent.com/HyperGroups/Mathematica/master/\ZhiHu/PlayingMathematica/汉字造型/"]
