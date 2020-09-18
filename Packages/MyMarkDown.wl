@@ -341,7 +341,7 @@ cellsExpression
 (*Export MarkDown*)
 stringMarkdown["local_absolute_filename"] = StringReplace[StringRiffle[ToString/@cellsString, "\r\n\r\n"],OptionValue[MDStringReplace]]; 
 stringMarkdown["local_relative_filename"]=StringReplace[stringMarkdown["local_absolute_filename"], {var["dirOutput"]->""}];
-stringMarkdown["online"]=StringReplace[stringMarkdown["local_absolute_filename"], {FileNameJoin[{var["dirOutput"]},OperatingSystem->"Unix"]->var["img_prefix"]}~Join~OptionValue[MDOnlineStringReplace]];
+stringMarkdown["online"]=StringReplace[stringMarkdown["local_absolute_filename"], {FileNameJoin[{var["dirOutput"]},OperatingSystem->"Unix"]->StringTrim[var["img_prefix"],{"/","\\\\"}]}~Join~OptionValue[MDOnlineStringReplace]];
 
 fileMarkDown["local_absolute_filename"] = FileNameJoin[{var["dirOutput"],var["title"]<>".absolute.md"}];
 fileMarkDown["local_relative_filename"] = FileNameJoin[{var["dirOutput"],var["title"]<>".relative.md"}];
