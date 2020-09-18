@@ -172,19 +172,19 @@ Cuboid，Sphere，BezierCurve,  Cone, Cylinder, Line...等等这些都是2维和
 ### 案例演示@直线风格建模@门窗
 
 
-![OutputCell](https://raw.githubusercontent.com/HyperGroups/Mathematica/master/YuQue/mathematica/PlayingMathematica/MathematicaBlockModelingI/resource/MathematicaBlockModelingI_64.jpg)
+![OutputCell](https://github.com/HyperGroups/Mathematica/blob/master/YuQue/mathematica/PlayingMathematica/MathematicaBlocksModelingI/MathematicaBlocksModelingI/resource/MathematicaBlocksModelingI_64.jpg?raw=true)
 
 这一块Mathematica 12.1增加了HatchFilling和PatternFilling是我比较喜欢的功能，以后再扩展介绍一下。
 
 ### 案例演示@城市
 
 
-![OutputCell](https://raw.githubusercontent.com/HyperGroups/Mathematica/master/YuQue/mathematica/PlayingMathematica/MathematicaBlockModelingI/resource/MathematicaBlockModelingI_67.jpg)
+![OutputCell](https://github.com/HyperGroups/Mathematica/blob/master/YuQue/mathematica/PlayingMathematica/MathematicaBlocksModelingI/MathematicaBlocksModelingI/resource/MathematicaBlocksModelingI_67.jpg?raw=true)
 
 ### 案例演示@轮胎
 
 
-![OutputCell](https://raw.githubusercontent.com/HyperGroups/Mathematica/master/YuQue/mathematica/PlayingMathematica/MathematicaBlockModelingI/resource/MathematicaBlockModelingI_69.jpg)
+![OutputCell](https://github.com/HyperGroups/Mathematica/blob/master/YuQue/mathematica/PlayingMathematica/MathematicaBlocksModelingI/MathematicaBlocksModelingI/resource/MathematicaBlocksModelingI_69.jpg?raw=true)
 
 ### 正向的难点
 
@@ -205,7 +205,7 @@ Cuboid，Sphere，BezierCurve,  Cone, Cylinder, Line...等等这些都是2维和
 ###### 案例演示@阴阳兔子@LowPoly风格
 
 
-![OutputCell](https://raw.githubusercontent.com/HyperGroups/Mathematica/master/YuQue/mathematica/PlayingMathematica/MathematicaBlockModelingI/resource/MathematicaBlockModelingI_77.jpg)
+![OutputCell](https://github.com/HyperGroups/Mathematica/blob/master/YuQue/mathematica/PlayingMathematica/MathematicaBlocksModelingI/MathematicaBlocksModelingI/resource/MathematicaBlocksModelingI_77.jpg?raw=true)
 
 法拉利2020款，历史有许多作品是这种分组三角化积木模型
 https://www.bilibili.com/video/BV1EZ4y1u7r3/
@@ -225,7 +225,7 @@ Mathematica这块我以后再单独展开，除了我的世界和体素风小游
 而我做得较多的另一部分是拿来生成虽然底层是体素化的，看起来就是普通的房子这种，体素可视风格没有那么强。
 所以我一直在探索强风格化与弱风格化之间的平衡问题。
 
-![OutputCell](https://raw.githubusercontent.com/HyperGroups/Mathematica/master/YuQue/mathematica/PlayingMathematica/MathematicaBlockModelingI/resource/MathematicaBlockModelingI_85.jpg)
+![OutputCell](https://github.com/HyperGroups/Mathematica/blob/master/YuQue/mathematica/PlayingMathematica/MathematicaBlocksModelingI/MathematicaBlocksModelingI/resource/MathematicaBlocksModelingI_85.jpg?raw=true)
 
 ### 积木建模之平行六面体建模
 
@@ -303,4 +303,4 @@ Mathematica==>Blender==>Mathematica==>积木模型
 
     << "/Users/hypergroups/Documents/githubhg/Mathematica/Packages/\MyMarkDown.wl"
 
-    Notebook2Markdown[EvaluationNotebook[],  "dirOutput" -> NotebookDirectory[],  "title" -> "MathematicaBlockModelingI",  ImagePrefix -> "https://raw.githubusercontent.com/HyperGroups/Mathematica/master/\YuQue/mathematica/PlayingMathematica/", Debug -> False]
+    Notebook2Markdown[EvaluationNotebook[],  "dirOutput" -> NotebookDirectory[],  "title" -> "MathematicaBlocksModelingI",  ImagePrefix -> "https://github.com/HyperGroups/Mathematica/blob/master/YuQue/\mathematica/PlayingMathematica/MathematicaBlocksModelingI",  Debug -> False, MDOnlineStringReplace -> {".jpg?raw=true" -> ".jpg?raw=true?raw=true"}]

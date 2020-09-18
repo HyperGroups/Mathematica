@@ -313,11 +313,13 @@ First@FrontEndExecute[FrontEnd`ExportPacket[cellExpression,"PlainText"]]]]//Quie
 exportMD[file_,str_] :=(If[FileExistsQ@file,DeleteFile@file];Export[file<>".txt",str];RenameFile[file<>".txt",file];)
 
 
-Options[Notebook2Markdown]={"dirOutput"->Directory[], "title"->"temp", Debug->False,StringReplace->False,ImagePrefix->"",CellsDelete->None,MDStringReplace->{},MDOnlineStringReplace->{}};
+Options[Notebook2Markdown]={"dirOutput"->Directory[], "title"->"temp", Debug->False,StringReplace->False,ImagePrefix->"",ImageSuffix->"",CellsDelete->None,MDStringReplace->{},MDOnlineStringReplace->{}};
 Notebook2Markdown[nb0_: (nb := EvaluationNotebook[]), options:OptionsPattern[]] := Module[
 {nb = nb0,cellsExpressionRaw,var,cellsString,(*cellsExpression,*)inputCells,inputCellCount,stringMarkdown,fileMarkDown}, 
 var["dirOutput"]=OptionValue["dirOutput"];
 var["title"]=OptionValue["title"];
+var["img_prefix"]=OptionValue[ImagePrefix];
+
 var["img_prefix"]=OptionValue[ImagePrefix];
 
 Which[Head@nb===NotebookObject,

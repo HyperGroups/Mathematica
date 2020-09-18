@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   3167894,      52318]
-NotebookOptionsPosition[   3155147,      52107]
-NotebookOutlinePosition[   3155538,      52123]
-CellTagsIndexPosition[   3155495,      52120]
+NotebookDataLength[   3168302,      52324]
+NotebookOptionsPosition[   3155554,      52113]
+NotebookOutlinePosition[   3155945,      52129]
+CellTagsIndexPosition[   3155902,      52126]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -52081,7 +52081,7 @@ wl\>\""}]], "Input",
    3.80941134672785*^9, {3.809413229361464*^9, 3.809413229625127*^9}, 
    3.8094132892392063`*^9},
  CellLabel->
-  "In[407]:=",ExpressionUUID->"adcabd3b-d09e-4d39-805c-e4cbb8ff3f2f"],
+  "In[426]:=",ExpressionUUID->"adcabd3b-d09e-4d39-805c-e4cbb8ff3f2f"],
 
 Cell[BoxData[
  RowBox[{"Notebook2Markdown", "[", 
@@ -52089,19 +52089,25 @@ Cell[BoxData[
    RowBox[{"EvaluationNotebook", "[", "]"}], ",", 
    RowBox[{"\"\<dirOutput\>\"", "\[Rule]", 
     RowBox[{"NotebookDirectory", "[", "]"}]}], ",", 
-   RowBox[{"\"\<title\>\"", "->", "\"\<MathematicaBlockModelingI\>\""}], ",", 
-   
+   RowBox[{"\"\<title\>\"", "->", "\"\<MathematicaBlocksModelingI\>\""}], ",", 
    RowBox[{
    "ImagePrefix", "\[Rule]", 
-    "\"\<https://raw.githubusercontent.com/HyperGroups/Mathematica/master/\
-YuQue/mathematica/PlayingMathematica/\>\""}], ",", 
-   RowBox[{"Debug", "\[Rule]", "False"}]}], "]"}]], "Input",
+    "\"\<https://github.com/HyperGroups/Mathematica/blob/master/YuQue/\
+mathematica/PlayingMathematica/MathematicaBlocksModelingI\>\""}], ",", 
+   RowBox[{"Debug", "\[Rule]", "False"}], ",", 
+   RowBox[{"MDOnlineStringReplace", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"\"\<.jpg\>\"", "\[Rule]", "\"\<.jpg?raw=true\>\""}], "}"}]}]}], 
+  "]"}]], "Input",
  CellChangeTimes->{{3.8094126319314823`*^9, 3.8094126480841923`*^9}, {
-  3.809412912154414*^9, 3.809412916783176*^9}, {3.809413355008224*^9, 
-  3.8094133568423986`*^9}, {3.809413630178484*^9, 3.809413632833213*^9}, {
-  3.809413843775234*^9, 3.809413844346133*^9}},
+   3.809412912154414*^9, 3.809412916783176*^9}, {3.809413355008224*^9, 
+   3.8094133568423986`*^9}, {3.809413630178484*^9, 3.809413632833213*^9}, {
+   3.809413843775234*^9, 3.809413844346133*^9}, {3.809414358007327*^9, 
+   3.809414368716823*^9}, {3.809414433873322*^9, 3.809414453548079*^9}, {
+   3.809414632158124*^9, 3.809414642186631*^9}, 3.809415198099155*^9, {
+   3.809415289952632*^9, 3.809415290432411*^9}, 3.809415381864142*^9},
  CellLabel->
-  "In[406]:=",ExpressionUUID->"e69a6bd4-39bd-419d-98ee-c3b7ecdc0540"]
+  "In[434]:=",ExpressionUUID->"e69a6bd4-39bd-419d-98ee-c3b7ecdc0540"]
 }, Open  ]]
 }, Open  ]]
 },
@@ -52317,7 +52323,7 @@ Cell[3153098, 52058, 655, 10, 53, "Text",ExpressionUUID->"2682c157-aab3-467c-ab9
 Cell[CellGroupData[{
 Cell[3153790, 52073, 74, 0, 101, "Section",ExpressionUUID->"37183ac2-bdc3-49aa-9f1a-4f82a6948100"],
 Cell[3153867, 52075, 379, 8, 46, "Input",ExpressionUUID->"adcabd3b-d09e-4d39-805c-e4cbb8ff3f2f"],
-Cell[3154249, 52085, 870, 18, 109, "Input",ExpressionUUID->"e69a6bd4-39bd-419d-98ee-c3b7ecdc0540"]
+Cell[3154249, 52085, 1277, 24, 140, "Input",ExpressionUUID->"e69a6bd4-39bd-419d-98ee-c3b7ecdc0540"]
 }, Open  ]]
 }, Open  ]]
 }
