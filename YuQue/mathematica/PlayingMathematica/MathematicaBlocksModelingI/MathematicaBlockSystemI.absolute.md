@@ -303,4 +303,4 @@ Mathematica==>Blender==>Mathematica==>积木模型
 
     << "/Users/hypergroups/Documents/githubhg/MathematicaMachineLearning/\Tools/MyMarkDown.m"
 
-    Notebook2Markdown[EvaluationNotebook[],  "dirOutput" -> NotebookDirectory[],  "title" -> "MathematicaBlockSystemI",  ImagePrefix -> "https://raw.githubusercontent.com/HyperGroups/Mathematica/master/\YuQue/mathematica/PlayingMathematica/Mathematica与积木系统I"]
+    Notebook2Markdown[EvaluationNotebook[],  "dirOutput" -> NotebookDirectory[],  "title" -> "MathematicaBlockSystemI",  ImagePrefix -> "https://raw.githubusercontent.com/HyperGroups/Mathematica/master/\YuQue/mathematica/PlayingMathematica/"]
