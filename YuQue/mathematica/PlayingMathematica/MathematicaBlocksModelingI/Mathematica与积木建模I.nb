@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   3167570,      52311]
-NotebookOptionsPosition[   3154824,      52100]
-NotebookOutlinePosition[   3155215,      52116]
-CellTagsIndexPosition[   3155172,      52113]
+NotebookDataLength[   3167668,      52313]
+NotebookOptionsPosition[   3154923,      52102]
+NotebookOutlinePosition[   3155314,      52118]
+CellTagsIndexPosition[   3155271,      52115]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -52073,12 +52073,13 @@ Cell["", "Section",ExpressionUUID->"37183ac2-bdc3-49aa-9f1a-4f82a6948100"],
 
 Cell[BoxData[
  RowBox[{"<<", 
-  "\"\</Users/hypergroups/Documents/githubhg/MathematicaMachineLearning/Tools/\
-MyMarkDown.m\>\""}]], "Input",
+  "\"\</Users/hypergroups/Documents/githubhg/Mathematica/Packages/MyMarkDown.\
+wl\>\""}]], "Input",
  CellChangeTimes->{{3.724660242014982*^9, 3.7246602466925097`*^9}, 
-   3.80941134672785*^9},
+   3.80941134672785*^9, {3.809413229361464*^9, 3.809413229625127*^9}, 
+   3.8094132892392063`*^9},
  CellLabel->
-  "In[373]:=",ExpressionUUID->"adcabd3b-d09e-4d39-805c-e4cbb8ff3f2f"],
+  "In[397]:=",ExpressionUUID->"adcabd3b-d09e-4d39-805c-e4cbb8ff3f2f"],
 
 Cell[BoxData[
  RowBox[{"Notebook2Markdown", "[", 
@@ -52086,15 +52087,16 @@ Cell[BoxData[
    RowBox[{"EvaluationNotebook", "[", "]"}], ",", 
    RowBox[{"\"\<dirOutput\>\"", "\[Rule]", 
     RowBox[{"NotebookDirectory", "[", "]"}]}], ",", 
-   RowBox[{"\"\<title\>\"", "->", "\"\<MathematicaBlockSystemI\>\""}], ",", 
+   RowBox[{"\"\<title\>\"", "->", "\"\<MathematicaBlockModelingI\>\""}], ",", 
+   
    RowBox[{
    "ImagePrefix", "\[Rule]", 
     "\"\<https://raw.githubusercontent.com/HyperGroups/Mathematica/master/\
-YuQue/mathematica/PlayingMathematica/Mathematica\:4e0e\:79ef\:6728\:7cfb\:7edf\
-I\>\""}]}], "]"}]], "Input",
- CellChangeTimes->{{3.8094126319314823`*^9, 3.8094126480841923`*^9}},
- CellLabel->
-  "In[387]:=",ExpressionUUID->"e69a6bd4-39bd-419d-98ee-c3b7ecdc0540"]
+YuQue/mathematica/PlayingMathematica/\>\""}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8094126319314823`*^9, 3.8094126480841923`*^9}, {
+  3.809412912154414*^9, 3.809412916783176*^9}, {3.809413355008224*^9, 
+  3.8094133568423986`*^9}},ExpressionUUID->"e69a6bd4-39bd-419d-98ee-\
+c3b7ecdc0540"]
 }, Open  ]]
 }, Open  ]]
 },
@@ -52309,8 +52311,8 @@ Cell[3153098, 52058, 600, 8, 53, "Text",ExpressionUUID->"2682c157-aab3-467c-ab9c
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[3153735, 52071, 74, 0, 101, "Section",ExpressionUUID->"37183ac2-bdc3-49aa-9f1a-4f82a6948100"],
-Cell[3153812, 52073, 316, 7, 46, "Input",ExpressionUUID->"adcabd3b-d09e-4d39-805c-e4cbb8ff3f2f"],
-Cell[3154131, 52082, 665, 14, 114, "Input",ExpressionUUID->"e69a6bd4-39bd-419d-98ee-c3b7ecdc0540"]
+Cell[3153812, 52073, 379, 8, 46, "Input",ExpressionUUID->"adcabd3b-d09e-4d39-805c-e4cbb8ff3f2f"],
+Cell[3154194, 52083, 701, 15, 78, "Input",ExpressionUUID->"e69a6bd4-39bd-419d-98ee-c3b7ecdc0540"]
 }, Open  ]]
 }, Open  ]]
 }
